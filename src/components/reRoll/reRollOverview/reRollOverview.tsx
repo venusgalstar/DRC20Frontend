@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
+import { useMemo, } from 'react';
 import Slider from 'react-slick'
 
 import { LabradogeSelectionModal } from '@/components/reRoll/labradogeSelectionModal/labradogeSelectionModal'

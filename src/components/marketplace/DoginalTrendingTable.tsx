@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react'
+//import { useCallback, useMemo, useState } from 'react'
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
@@ -34,6 +34,7 @@ const DoginalTrendingTable = ({
   totalDogeNftPages,
   setCurrentDogeNftPage,
 }: DoginalTrendingTableProps) => {
+  selectedSortType;
   // const [sortedCollections, setSortedCollections] = useState<DoginalsCollection[]>(collections)
 
   // const handleSorting = useCallback(() => {

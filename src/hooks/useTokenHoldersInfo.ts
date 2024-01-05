@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
 import { useFetch } from 'usehooks-ts'
 
 import { TokenHolderInfo } from '@/types/tokenHolderInfo'
 
+/*
 const mockData: TokenHolderInfo[] = [
   { rank: 1, address: 'D6aPHgCv4HPMS4dqivbmXstSoPfsB8xZFA', percentage: 10, value: 1000 },
   { rank: 2, address: 'D9bS1JXcVc9KuyvZm1pYtbGFCR9NnATsWx', percentage: 8, value: 800 },
@@ -28,6 +28,7 @@ const mockData: TokenHolderInfo[] = [
   { rank: 22, address: 'DC1p6ikYMPX6y8LCCptxvZPgy3p3q5zoaU', percentage: 1.1, value: 110 },
   { rank: 23, address: 'DC3p69kYMPX6y8LCCptxvZPgy3p3q5zoaA', percentage: 1, value: 100 },
 ]
+*/
 
 type useTokenHoldersInfoProps = {
   tokenSymbol: string

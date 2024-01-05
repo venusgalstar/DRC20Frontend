@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import { createContext, useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import BaseButton from '@/components/BaseButton'
 import ErrorSection from '@/components/ErrorSection'
 // import { featuredTicks } from '@/components/ExplorerTable'

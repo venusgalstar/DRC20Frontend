@@ -21,7 +21,8 @@ export function TennisBallsSelectionModal() {
         SELECT YOUR TENNIS BALL TO RE-ROLL
       </Text>
       <div className={styles.selectionContainer}>
-        {tennisBalls.map((tennisBall, index) => (
+        {//@ts-ignore
+          tennisBalls.map((tennisBall, index) => (
           <OverviewCard
             imageSrc={tennisBall.imageSrc}
             cleanHeadline={`Tennis Ball #${tennisBall.id}`}

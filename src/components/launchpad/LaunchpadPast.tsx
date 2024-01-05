@@ -1,10 +1,10 @@
-import React from 'react'
+//import React from 'react'
 import { useFetch } from 'usehooks-ts'
 
 import LaunchpadCollectionCard, { LaunchpadCollectionCardProps } from '@/components/launchpad/LaunchpadCollectionCard'
 import { LaunchpadFetchResult } from '@/types/ILaunchpad'
 
-import styles from './LaunchpadLive.module.scss'
+//import styles from './LaunchpadLive.module.scss'
 import { MintingPageContainer } from './MintingPageContainer'
 
 export function LaunchpadPast() {
@@ -58,7 +58,7 @@ export function LaunchpadPast() {
           </h1>
         </div>
       ) : (
-        collections.map((collection, index): any => (
+        collections.map((collection /*, index*/): any => (
           <div className="self-start" key={`LaunchpadCollectionCardPast-${collection.symbol}`}>
             <LaunchpadCollectionCard
               isActive={collection.isActive}

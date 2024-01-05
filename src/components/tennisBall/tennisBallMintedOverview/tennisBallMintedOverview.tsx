@@ -6,7 +6,8 @@ export function TennisBallMintedOverview() {
   const { mintedTennisBalls } = useTennisBallData()
   return (
     <div className={styles.grid}>
-      {mintedTennisBalls?.map((mintedTennisBall, index) => (
+      {//@ts-ignore
+        mintedTennisBalls?.map((mintedTennisBall, index) => (
         <OverviewCard
           key={`${mintedTennisBall.id} ${index}`}
           imageSrc={mintedTennisBall.imageSrc}

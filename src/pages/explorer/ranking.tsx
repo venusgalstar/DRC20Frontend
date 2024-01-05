@@ -1,5 +1,5 @@
-import { Button } from 'antd'
-import React from 'react'
+//import { Button } from 'antd'
+//import React from 'react'
 import { Timeline } from 'react-twitter-widgets'
 
 import DownloadWallet from '@/components/DownloadWallet'

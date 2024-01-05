@@ -7,7 +7,7 @@ import {
   YoutubeOutlined,
 } from '@ant-design/icons'
 import { Image, Layout, Menu } from 'antd'
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useLocalStorage } from 'usehooks-ts'
 
@@ -98,7 +98,7 @@ const PageBase = ({ children }: { children: any }) => {
 
   // Add state to track keys being pressed
   const [keysPressed, setKeysPressed] = useState(new Set())
-
+  keysPressed;
   // Add hook to handle keydown and keyup events
   useEffect(() => {
     const downHandler = ({ key }: { key: string }) => {

@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 
 import { Collection } from '@/components/doginalpacks/collection'
 import { CollectionProvider } from '@/provider/collectionProvider/collectionProvider'

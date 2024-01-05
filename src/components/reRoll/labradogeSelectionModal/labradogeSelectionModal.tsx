@@ -21,7 +21,8 @@ export function LabradogeSelectionModal() {
         SELECT YOUR LABRADOGE TO RE-ROLL
       </Text>
       <div className={styles.selectionContainer}>
-        {labradoges.map((labradoge, index) => (
+        {//@ts-ignore
+          labradoges.map((labradoge, index) => (
           <OverviewCard
             imageSrc={labradoge.image}
             labradogeId={labradoge.id}

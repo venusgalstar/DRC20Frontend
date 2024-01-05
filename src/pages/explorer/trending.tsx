@@ -1,9 +1,9 @@
 import { Timeline } from 'react-twitter-widgets'
-import { useFetch } from 'usehooks-ts'
+//import { useFetch } from 'usehooks-ts'
 
-import { BaseColumns, featuredTicks, Table } from '@/components/ExplorerTable'
+import { BaseColumns, Table } from '@/components/ExplorerTable'
 import TopCoinsByCategory from '@/components/TopCoinsByCategory'
-import { DEFAULT_PAGE_SIZE, FetchResult, PaginationData } from '@/types/IExplorer'
+//import { DEFAULT_PAGE_SIZE, FetchResult, PaginationData } from '@/types/IExplorer'
 
 import PageBase from '../_base'
 

@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import { Timeline } from 'react-twitter-widgets'
 
 import DownloadWallet from '@/components/DownloadWallet'

@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import SwitchButton from '@/components/doginalpacks/SwitchButton'
 import Hero from '@/components/hero/Hero'

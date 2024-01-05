@@ -1,4 +1,4 @@
-import axios, { AxiosError } from 'axios'
+import { AxiosError } from 'axios'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import {
@@ -17,13 +17,13 @@ import DoginalShowTxModal from '@/components/doginals/DoginalShowTxModal'
 import LoadingSpinnerIcon from '@/components/LoadingSpinnerIcon'
 import useToast from '@/hooks/useToast'
 import { Doginal, DoginalOffer, DoginalsCollection } from '@/types/dogeNft'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import PageBase from '../_base'
 
-function isAxiosError(error: any): error is AxiosError {
-  return error && typeof error.isAxiosError === 'boolean' && error.isAxiosError
-}
+//function isAxiosError(error: any): error is AxiosError {
+//  return error && typeof error.isAxiosError === 'boolean' && error.isAxiosError
+//}
 
 const DoginalDetailsPage = () => {
   const { pathname } = useLocation()
@@ -39,6 +39,7 @@ const DoginalDetailsPage = () => {
   const [showTxModalVisible, setShowTxModalVisible] = useState<boolean>(false)
   const [txHash, setTxHash] = useState<string>('')
 
+  listingTimestamp;
   // useEffect(() => {
   //   const fetchContent = async () => {
   //     const { res, err } = await getInscriptionContent(inscriptionId)

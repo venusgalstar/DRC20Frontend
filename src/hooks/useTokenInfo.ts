@@ -1,5 +1,5 @@
 import { useFetch } from 'usehooks-ts'
-import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
+import { useMemo } from 'react';
 import { TokenInfo } from '@/types/tokenInfo'
 
 type TokenProps = {

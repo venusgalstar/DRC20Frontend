@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useMemo, useState, useEffect } from 'react'
 import { useLocation, useNavigate, useSearchParams } from 'react-router-dom'
 
 import { PaginationInfo } from '@/types/common'

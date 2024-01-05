@@ -5,7 +5,7 @@ import ChampionsTCG from '@/pages/service/championsTCG'
 import Doginals from '@/pages/service/doginals'
 import Labradoge from '@/pages/service/labradoge'
 // import LabradogePackReveal from '@/pages/service/labradoge-pack-reveal'
-import ReRoll from '@/pages/service/re-roll'
+//import ReRoll from '@/pages/service/re-roll'
 //import routes from '~react-pages'
 
 import AccountPage from './pages/AccountPage'
@@ -34,7 +34,8 @@ function Redirect({ to }: { to: string }) {
 }
 
 function App() {
-  const { address, connected } = useWalletContext()
+  //const { address, connected } = useWalletContext()
+  const { address } = useWalletContext()
 
   return (
     <>

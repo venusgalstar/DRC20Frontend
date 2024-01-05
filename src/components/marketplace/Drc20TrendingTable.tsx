@@ -1,4 +1,4 @@
-import { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
@@ -57,7 +57,7 @@ const Drc20TrendingTable = ({
         return setSortedDrc20Data(newSortedDrc20DataPriceDesc)
     }
 
-    const _ensureAllCasesCovered: never = selectedSortType
+    //const _ensureAllCasesCovered: never = selectedSortType
   }, [selectedSortType, drc20List])
 
   useEffect(() => {

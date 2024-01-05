@@ -1,5 +1,5 @@
 import { InscriptionType } from '@/pages/service/inscribe'
-import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
+import { useMemo, useCallback } from 'react';
 
 type usePostProps = {
   type: InscriptionType

@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { getImageInscriptions } from '@/api'
 import { ImageInscriptionResponse } from '@/types/dogeNft'
 

@@ -49,7 +49,7 @@ export function RevealProvider({ children }: RevealProviderProps) {
   const fetchTimeoutRef = useRef<NodeJS.Timeout | number | null>(null)
 
   const { address, connected, sendInscription } = useWallet()
-  const { doginals, error, loading, complete } = useGetLabradogesData(address, connected, collections)
+  const { doginals, complete } = useGetLabradogesData(address, connected, collections)
 
   const fetchData = useCallback(async (): Promise<ImageInscriptionResponse[] | undefined> => {
     if (connected && address) {

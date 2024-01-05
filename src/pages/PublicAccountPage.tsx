@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
 import DogeNftOverview from '@/components/account/DogeNftOverview'
@@ -35,7 +35,7 @@ function PublicAccountPage() {
   const [isLoading, setIsLoading] = useState<boolean>(true)
 
   const [searchValue, setSearchValue] = useState<string>('')
-  const [isDrc20TabSelected, setIsDrc20TabSelected] = useState<boolean>(false)
+  //const [isDrc20TabSelected, setIsDrc20TabSelected] = useState<boolean>(false)
 
   const refreshInscriptions = useCallback(async (address: string) => {
     await postRefreshInscriptions(address)

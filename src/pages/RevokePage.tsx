@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { useLocation } from 'react-router'
 
 import RevokeDrc20Overview from '@/components/account/RevokeDrc20Overview'
@@ -38,6 +38,9 @@ function RevokePage({ address }: AddressConsumingProps) {
   const [displayedType, setDisplayedType] = useState(DisplayType.DRC20)
 
   const [activeTab, setActiveTab] = useState<string>(queryParams.get('activeTab') || AssetTransferTab.Drc20)
+  
+  setActiveTab(queryParams.get('activeTab') || AssetTransferTab.Drc20)
+
   const [drc20Array, setDrc20Array] = useState<Drc20[]>([])
   const [transferInscriptions, setTransferInscriptions] = useState<TransferInscription[]>([])
   const [dogecoinPriceInUsd, setDogecoinPriceInUsd] = useState<number>()

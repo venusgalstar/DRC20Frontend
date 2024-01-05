@@ -1,5 +1,5 @@
 import { DownOutlined, UpOutlined } from '@ant-design/icons'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import {
   createDoginal,
@@ -218,7 +218,7 @@ const FeaturesRow: React.FC<FeaturesRowProps> = ({ feature, onEdit, onMoveUp, on
   const handleEdit = (field: string, value: string) => {
     onEdit(feature, field, value)
   }
-
+  
   return (
     <div className="border-2 p-2 flex justify-between w-1/2 flex-1 rounded-xl">
       <p className="w-4/6">{feature.header}</p>
@@ -370,10 +370,14 @@ const CreateCollectionForm: React.FC = () => {
 
     const { res, err: doginalCollectionErr } = await createDoginalCollection(formData, address)
 
+    res;
+
     if (doginalCollectionErr) {
       await generateJwt(address)
       const { res, err } = await createDoginalCollection(formData, address)
 
+      res;
+      
       if (err) {
         throw new Error(`Unable to create doginal collection: ${err.message}`)
       }

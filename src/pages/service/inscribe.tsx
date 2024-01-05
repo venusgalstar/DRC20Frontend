@@ -1,5 +1,5 @@
 import { Button, Segmented } from 'antd'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useMemo, useRef, useState, useEffect } from 'react'
 import QRCode from 'react-qr-code'
 import { useParams } from 'react-router-dom'
 import Slider from 'react-slick'

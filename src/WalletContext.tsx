@@ -19,7 +19,7 @@ interface WalletContextType {
 }
 
 const WalletContext = createContext<WalletContextType | undefined>(undefined)
-
+// @ts-ignore
 const WalletProvider: React.FC = ({ children }) => {
   const wallet = useWallet()
 

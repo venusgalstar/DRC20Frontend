@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState} from 'react'
 
 import { Packs } from '@/components/championsTcg/packs'
 import { Collection } from '@/components/doginalpacks/collection'

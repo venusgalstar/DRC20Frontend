@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect, useCallback } from 'react'
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
@@ -55,6 +55,7 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({ onChange }) => {
 }
 
 const DoginalsCollectionPage = ({ address }: DoginalsCollectionPageProps) => {
+  address;
   const navigate = useNavigate()
   const { pathname } = useLocation()
   const symbol = pathname.split('/')[3]
@@ -69,15 +70,18 @@ const DoginalsCollectionPage = ({ address }: DoginalsCollectionPageProps) => {
   }>()
   const [doginalsCollectionInfo, setDoginalsCollectionInfo] = useState<DoginalsCollection | null>(null)
   const [doginalsCollectionOfferList, setDoginalsCollectionOfferList] = useState<DoginalOffer[]>([])
+  doginalsCollectionOfferList;
   const [showCollectionOffers, setShowCollectionOffers] = useState<boolean>(false)
   const [currentPage, setCurrentPage] = useState<number>(1)
   const [totalPages, setTotalPages] = useState<number>(1)
   const [selectedMetadata, setSelectedMetadata] = useState<Record<string, string>>({})
   const [filterOpen, setFilterOpen] = useState<boolean>(false)
   const [selectedTags, setSelectedTags] = useState<Record<string, string | null>>({})
+  selectedTags;
   const [selectedSortType, setSelectedSortType] = useState<SortByPriceTypes>(SortByPriceTypes.PriceAscending)
   const [selectedActivitySortType, setSelectedActivitySortType] = useState<ActivitySortTypes | undefined>(undefined)
   const [activityRefresh, setAcitivityRefresh] = useState<boolean>()
+  activityRefresh;
 
   const ref = useRef<null | HTMLDivElement>(null)
 
@@ -175,6 +179,7 @@ const DoginalsCollectionPage = ({ address }: DoginalsCollectionPageProps) => {
     fetchDogePriceInUsd()
   }, [])
 
+  /*
   const handleShowCollectionOffers = (showCollectionOffers: boolean) => {
     let metadataKey: string | undefined = undefined
     let metadataValue: string | undefined = undefined
@@ -184,11 +189,13 @@ const DoginalsCollectionPage = ({ address }: DoginalsCollectionPageProps) => {
     }
     fetchDoginalsData()
   }
+  */
+  
 
   const handleMetadataChange = (metadata: Record<string, string>) => {
     if (metadata) {
-      const metadataKey = Object.keys(metadata)[0]
-      const metadataValue = metadata[metadataKey]
+      //const metadataKey = Object.keys(metadata)[0]
+      //const metadataValue = metadata[metadataKey]
 
       setSelectedMetadata(metadata)
       setSelectedTags(metadata)

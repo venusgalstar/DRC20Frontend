@@ -1,6 +1,7 @@
 import { Menu } from 'antd'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Timeline } from 'react-twitter-widgets'
+//import { Timeline } from 'react-twitter-widgets'
+import {useState} from 'react'
 
 import Listings from '@/components/Listings'
 import Orders from '@/components/Orders'
@@ -24,7 +25,7 @@ const Trade = () => {
   let navigate = useNavigate()
   const { search: params } = useLocation()
   const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
-  const url = `${baseUrl}/ticks/list/ranking?size=10000&page=0`
+  //const url = `${baseUrl}/ticks/list/ranking?size=10000&page=0`
 
   const navigateTo = (e: any) => {
     switch (e.key) {

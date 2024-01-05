@@ -1,5 +1,5 @@
 import { Button, Progress } from 'antd'
-import { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Slider from 'react-slick'
 import { useFetch } from 'usehooks-ts'
 
@@ -27,10 +27,12 @@ const sliderSettings = {
   swipe: false,
 }
 
+/*
 interface Step {
   label: string
   description?: string
 }
+*/
 
 const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
   name,

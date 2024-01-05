@@ -1,5 +1,4 @@
-import axios from 'axios'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import { getDoginalInfo } from '@/api'
 import { useGetInscriptionsByAddress } from '@/hooks/useGetInscriptionsByAddress'

@@ -1,11 +1,11 @@
-import React from 'react'
+//import React from 'react'
 import { useFetch } from 'usehooks-ts'
 
 import { LaunchpadCollectionCardProps } from '@/components/launchpad/LaunchpadCollectionCard'
 import MintpadCollectionCard from '@/components/launchpad/MintpadCollectionCard'
 import { LaunchpadFetchResult } from '@/types/ILaunchpad'
 
-import styles from './LaunchpadLive.module.scss'
+//import styles from './LaunchpadLive.module.scss'
 import { MintingPageContainer } from './MintingPageContainer'
 
 export function MintpadPast() {
@@ -17,7 +17,7 @@ export function MintpadPast() {
 
   let collections: LaunchpadCollectionCardProps[] = []
   if (data) {
-    collections = data!.collections.map(
+    collections = data!.collections.map( //@ts-ignore
       (collection) =>
         ({
           ...collection,
