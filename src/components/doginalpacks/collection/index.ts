@@ -1,4 +1,4 @@
-import * as Collection from "./collection";
+import {Collection} from "./collection";
 import * as CollectionMintingCard from "./CollectionMintingCard";
 import * as ImageCarousel from "./ImageCarousel";
 

@@ -1,3 +1,3 @@
-import * as Packs from "./packs";
+import {Packs} from "./packs";
 
 export {Packs};
