@@ -1,6 +1,6 @@
 import { LeftOutlined, RightOutlined } from '@ant-design/icons'
 import { Button } from 'antd'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 
 export const PrevButton = ({ onClick, disabled, children }: { onClick: any; disabled: boolean; children: any }) => {
   return (

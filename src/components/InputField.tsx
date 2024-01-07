@@ -1,4 +1,4 @@
-import { Button, Input, InputNumber, InputRef, Popover } from 'antd'
+import { Input, InputNumber, Popover } from 'antd'
 
 import { CopyIcon } from '@/assets/icons/copy'
 

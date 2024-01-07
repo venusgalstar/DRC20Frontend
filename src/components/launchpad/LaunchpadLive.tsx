@@ -1,4 +1,4 @@
-import { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useFetch } from 'usehooks-ts'
 
 import { getDoginalCollectionsWhitelist } from '@/api'
@@ -6,7 +6,6 @@ import LaunchpadCollectionCard, { LaunchpadCollectionCardProps } from '@/compone
 import { LaunchpadFetchResult } from '@/types/ILaunchpad'
 import { useWalletContext } from '@/WalletContext'
 
-import styles from './LaunchpadLive.module.scss'
 import { MintingPageContainer } from './MintingPageContainer'
 
 export function LaunchpadLive() {

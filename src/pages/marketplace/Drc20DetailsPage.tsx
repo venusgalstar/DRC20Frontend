@@ -1,6 +1,5 @@
-import axios, { AxiosError } from 'axios'
 import { useLocation, useNavigate } from 'react-router-dom'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import {
   drc20TrustLevel,
@@ -17,13 +16,14 @@ import ShowTxModal from '@/components/ShowTxModal'
 import useToast from '@/hooks/useToast'
 import PageBase from '@/pages/_base'
 import { Drc20Offer } from '@/types/drc20'
-import { MINER_FEE, ONE_DOGE_IN_SHIBES, SERVICE_FEE, TrustLevel } from '@/utils/constants'
-import { getDummyUtxoValueFromSellerPsdt } from '@/utils/helpers'
+import { ONE_DOGE_IN_SHIBES, TrustLevel } from '@/utils/constants'
 import { useWalletContext } from '@/WalletContext'
 
+/*
 function isAxiosError(error: any): error is AxiosError {
   return error && typeof error.isAxiosError === 'boolean' && error.isAxiosError
 }
+*/
 
 type Drc20DetailsPageProps = {
   address: string

@@ -23,7 +23,7 @@ export const TopCoinsByCategory = ({
   showMoreLink = true,
   onClickTopCoin = undefined,
 }: TopCoinsByCategoryProps) => {
-  let { data, error } = useFetch<any>(url)
+  let { data } = useFetch<any>(url)
 
   return (
     <div

@@ -1,9 +1,7 @@
-import React from 'react'
-
 import { getDoginalOffer, getPsdtFromOfferId } from '@/api'
 import useToast from '@/hooks/useToast'
 import Sentry from '@/main'
-import { Doginal, DoginalOffer } from '@/types/dogeNft'
+import { DoginalOffer } from '@/types/dogeNft'
 import { ONE_DOGE_IN_SHIBES } from '@/utils/constants'
 import { useWalletContext } from '@/WalletContext'
 

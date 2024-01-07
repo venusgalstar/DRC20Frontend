@@ -1,12 +1,10 @@
 import { Image } from 'antd'
-import { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 
 import { getDoginalCollectionInfo } from '@/api'
 import LaunchpadCollectionCard, { LaunchpadCollectionCardProps } from '@/components/launchpad/LaunchpadCollectionCard'
 import { MintingPageContainer } from '@/components/launchpad/MintingPageContainer'
 import { championsTcgCollectionSymbols } from '@/pages/service/championsTCG'
-
-import styles from './packs.module.scss'
 
 export function Packs() {
   const [doginalCollectionsList, setDoginalCollectionsList] = useState<any>([])

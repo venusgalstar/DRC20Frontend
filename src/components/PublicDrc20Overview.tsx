@@ -1,6 +1,6 @@
 import { Tooltip } from 'antd'
 import BigNumber from 'bignumber.js'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,

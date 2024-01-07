@@ -47,9 +47,11 @@ const Drc20TrendingTableRow = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tick])
 
+  /*
   const formatPercentPriceChange = (priceChange: number) => {
     return Math.round(priceChange)
   }
+  */
 
   const handleTextColor = (percentPriceChange: number) => {
     return percentPriceChange < 0 ? 'text-[#E82C44]' : 'text-[#23D581]'

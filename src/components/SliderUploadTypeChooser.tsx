@@ -13,7 +13,7 @@ const SliderUploadTypeChooser = ({ uploadType, upload, onChange, explanationText
       <CustomCheckbox
         checked={uploadType === upload[0]}
         label={upload[0]}
-        onChange={(e) => onChange(upload[0])}
+        onChange={(_e) => onChange(upload[0])}
         explanationPopover={
           (explanationTexts && explanationTexts[0]) || 'When choosing single, we will inscribe exactly what is there.'
         }
@@ -21,7 +21,7 @@ const SliderUploadTypeChooser = ({ uploadType, upload, onChange, explanationText
       <CustomCheckbox
         checked={uploadType === upload[1]}
         label={upload[1]}
-        onChange={(e) => onChange(upload[1])}
+        onChange={(_e) => onChange(upload[1])}
         explanationPopover={
           (explanationTexts && explanationTexts[1]) || 'With bulk, we will inscribe one for every new line.'
         }

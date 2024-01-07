@@ -1,5 +1,3 @@
-import React from 'react'
-
 import AmountInput from '@/components/AmountInput'
 import ServiceContentContainer from '@/components/ServiceContentContainer'
 import { CustomButton, Text } from '@/components/ui'
@@ -11,7 +9,7 @@ import unleashDoginals from '../../../assets/images/unleash-doginals.png'
 import styles from './mintOverview.module.scss'
 
 export function MintOverview() {
-  const { address, connected } = useWalletContext()
+  const { connected } = useWalletContext()
   const { selectedMintAmount, setSelectedMintAmount, onMint } = useLabradogeData()
 
   return (

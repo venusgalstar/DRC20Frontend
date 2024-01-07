@@ -23,7 +23,6 @@ type Drc20OverviewProps = {
 const RevokeDrc20Overview = ({
   address,
   transferInscriptions,
-  searchValue,
   itemsPerPage,
   dogecoinPriceInUsd,
 }: Drc20OverviewProps) => {

@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 
-import { DoginalsCollection } from '@/types/dogeNft'
-import { truncateAddress, truncateInscriptionId } from '@/utils'
-
 type DoginalDetailsProps = {
   doginalsDescription: string
 }

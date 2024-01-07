@@ -1,5 +1,5 @@
 import { Popover } from 'antd'
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function TicksVerifiedAndImage({
   tick,

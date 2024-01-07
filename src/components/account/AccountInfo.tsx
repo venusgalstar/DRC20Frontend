@@ -12,7 +12,7 @@ type AccountInfoProps = {
 }
 
 const AccountInfo = ({ address }: AccountInfoProps) => {
-  const [profileImage, setImage] = useState<string>('/images/unleash-doginals.svg') // change this to proper default value
+  const [profileImage] = useState<string>('/images/unleash-doginals.svg') // change this to proper default value
   const [copied, setCopied] = useState(false)
   const { connected } = useWalletContext()
 

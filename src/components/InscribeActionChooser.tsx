@@ -11,17 +11,17 @@ const InscribeActionChooser = ({ actions, actionType, onChangeActionType }: Insc
     <CustomCheckbox
       checked={actionType === actions[0]}
       label={actions[0]}
-      onChange={(e) => onChangeActionType(actions[0])}
+      onChange={(_e) => onChangeActionType(actions[0])}
     />
     <CustomCheckbox
       checked={actionType === actions[1]}
       label={actions[1]}
-      onChange={(e) => onChangeActionType(actions[1])}
+      onChange={(_e) => onChangeActionType(actions[1])}
     />
     <CustomCheckbox
       checked={actionType === actions[2]}
       label={actions[2]}
-      onChange={(e) => onChangeActionType(actions[2])}
+      onChange={(_e) => onChangeActionType(actions[2])}
     />
   </div>
 )

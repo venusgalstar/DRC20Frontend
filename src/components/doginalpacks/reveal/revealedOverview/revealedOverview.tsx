@@ -2,8 +2,6 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import { OverviewCard } from '@/components/labradoge'
 import { DetailModal } from '@/components/labradoge/detailModal/detailModal'
-import { CustomButton, Heading, Text } from '@/components/ui'
-import { useReRollData } from '@/hooks/useReRollData'
 import { useRevealData } from '@/hooks/useRevealData'
 
 import styles from './revealedOverview.module.scss'

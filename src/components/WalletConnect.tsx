@@ -24,7 +24,7 @@ const WalletConnect: React.FC<WalletConnectInputProps> = ({
   hideDoggy = false,
 }) => {
   const navigator = useNavigate()
-  const { dogeLabsInstalled, connected, address, balance, network, connectWallet, switchNetwork } = useWalletContext()
+  const { dogeLabsInstalled, connected, balance, network, connectWallet, switchNetwork } = useWalletContext()
 
   const navigateToAccountPage = () => {
     navigator(accountPage)

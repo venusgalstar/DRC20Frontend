@@ -172,7 +172,7 @@ export const Table = ({
               ))}
             </thead>
             <tbody>
-              {table.getRowModel().rows.map((row, index) => (
+              {table.getRowModel().rows.map((row, _index) => (
                 <tr
                   key={row.id}
                   style={{
@@ -210,7 +210,7 @@ export const Table = ({
 export const BaseColumns = {
   tick: () => ({
     id: 'tick',
-    header: (cellContent: any) => (
+    header: (_cellContent: any) => (
       <div className="text-left pl-4" style={{ minWidth: '100px' }}>
         Name
       </div>

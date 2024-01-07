@@ -17,7 +17,7 @@ import {
 //import LoadingSpinnerIcon from '../../components/LoadingSpinnerIcon'
 import Trending from '../../components/marketplace/Trending'
 import { DoginalsCollection } from '../../types/dogeNft'
-import { Drc20Data, Drc20List } from '../../types/drc20'
+import { Drc20Data } from '../../types/drc20'
 import PageBase from '../_base'
 
 const MarketplaceLandingPage = () => {

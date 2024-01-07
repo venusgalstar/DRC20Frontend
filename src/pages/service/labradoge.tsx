@@ -4,7 +4,7 @@ import { AddressConsumingProps } from '@/types/common'
 
 import PageBase from '../_base'
 
-export default function Labradoge({ address }: AddressConsumingProps) {
+export default function Labradoge({ }: AddressConsumingProps) {
   return (
     <LabradogeProvider>
       <PageBase>

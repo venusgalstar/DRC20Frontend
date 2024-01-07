@@ -3,8 +3,7 @@ import { Tooltip } from 'react-tooltip'
 
 import { createDoginalOffer, getIsWhitelistedUd, getSellerPsdtHex, getUtxoFromInscriptionId } from '@/api'
 import useToast from '@/hooks/useToast'
-import { DogeNft, Doginal } from '@/types/dogeNft'
-import { TransferInscription } from '@/types/transferInscriptions'
+import { DogeNft } from '@/types/dogeNft'
 import { DISCOUNTED_SERVICE_FEE, DUST_AMOUNT_AND_MIN_PRICE, ONE_DOGE_IN_SHIBES, SERVICE_FEE } from '@/utils/constants'
 
 type DoginalListForSaleModalProps = {
@@ -60,7 +59,7 @@ const DoginalListForSaleModal = ({
   const [totalPotentialProceeds, setTotalPotentialProceeds] = useState<string>('0')
   const [networkFee, setNetworkFee] = useState<number>(0)
 
-  const [isPriorityChecked, setIsPriorityChecked] = useState<boolean>(false)
+  const [_isPriorityChecked, _setIsPriorityChecked] = useState<boolean>(false)
   const [isDiscountChecked, setIsDiscountChecked] = useState<boolean>(false)
   const [isWhitelistedUd, setIsWhitelistedUd] = useState<boolean>(false)
   const toast = useToast()
@@ -118,9 +117,11 @@ const DoginalListForSaleModal = ({
     setVisible(false)
   }
 
+  /*
   const handlePriorityCheckbox = () => {
     setIsPriorityChecked(!isPriorityChecked)
   }
+  */
 
   const handleDiscountCheckbox = () => {
     setIsDiscountChecked(!isDiscountChecked)
@@ -132,7 +133,7 @@ const DoginalListForSaleModal = ({
       const { txId, outputIndex } = await getUtxoFromInscriptionId(doginal.inscriptionId)
       const psdtHex = await getSellerPsdtHex(address, priceInShibes, txId, outputIndex, isDiscountChecked)
       const signedPsdtHex = await (window as any).dogeLabs.signPsbt(psdtHex)
-      const { data } = await createDoginalOffer(signedPsdtHex)
+      const { } = await createDoginalOffer(signedPsdtHex)
       toast.showSuccessToast('Successfully listed')
       closeDoginalListForSaleModal()
     } catch (e) {
