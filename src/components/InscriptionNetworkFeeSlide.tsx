@@ -1,5 +1,5 @@
 import { useFetch } from 'usehooks-ts'
-import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import InfoPopover from '@/components/InfoPopover'
 import usePostInscriptions from '@/hooks/usePostInscriptions'
 import { InscriptionType } from '@/pages/service/inscribe'
@@ -48,7 +48,7 @@ const InscriptionNetworkFeeSlide = ({
   }
   const [feeType, setFeeType] = useState<FeeType>('priorityPricing')
   const [error, setError] = useState<null | string>(null)
-  const contentAmount = contents?.length ?? 0
+  //const contentAmount = contents?.length ?? 0
   const dogemapFee = useMemo(
     () => (pricingData ? (pricingData?.[feeType]?.prices?.isDogemap ? pricingData[feeType].prices.dogemapFee : 0) : 0),
     [feeType, pricingData]

@@ -1,6 +1,6 @@
 import { Button, MenuProps } from 'antd'
 import { useFetch } from 'usehooks-ts'
-import React, { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 import { ReloadIcon } from '@/assets/icons/reload'
 import { Listing } from '@/types/listing'
@@ -32,6 +32,7 @@ const Listings = ({ filter, onChangeFilter, sorting = 1, sortingOptions, onChang
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const [currentPage, setCurrentPage] = useState<number>(0)
   const [itemsPerPage, setItemsPerPage] = useState<number>(20)
+  setItemsPerPage(20)
 
   const refetch = async () => {
     setData(null)

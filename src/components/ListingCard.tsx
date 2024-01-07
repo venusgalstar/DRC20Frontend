@@ -22,7 +22,7 @@ const ListingCard = ({
 }: Listing) => {
   const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
   const url = `${baseUrl}/ticks/byName/${tokenSymbol.toLowerCase()}`
-  let { data } = useFetch<AFetchResult>(url)
+  //let { data } = useFetch<AFetchResult>(url)
 
   const [showModal, setShowModal] = useState(false)
   const [imgSrc, setImgSrc] = useState(

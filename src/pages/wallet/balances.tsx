@@ -161,7 +161,7 @@ const Balances = () => {
                 </Tr>
               </Thead>
               <Tbody>
-                {balanceInfoData?.map((balance: BalanceInfoData, index: number) => (
+                {balanceInfoData?.map((balance: BalanceInfoData, _index: number) => (
                   <Tr
                     style={{
                       background: '#feffff',

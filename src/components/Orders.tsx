@@ -1,12 +1,12 @@
 import { Button } from 'antd'
 import { useFetch } from 'usehooks-ts'
-import React, { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 import { ReloadIcon } from '@/assets/icons/reload'
 import BaseButton from '@/components/BaseButton'
 import Table from '@/components/Table'
 import { Listing } from '@/types/listing'
-import { truncateAddress, trustLevelBadge } from '@/utils'
+import { truncateAddress } from '@/utils'
 import { formatTimestamp } from '@/utils/numberFormatter'
 
 import FilterTooltip from './FilterTooltip'
@@ -58,7 +58,7 @@ const Orders = () => {
   const columns = [
     {
       id: 'token',
-      header: ({ row }: { row: any }) => (
+      header: ({}: { row: any }) => (
         <div className="text-center pl-4" style={{ minWidth: '70px' }}>
           Token
         </div>

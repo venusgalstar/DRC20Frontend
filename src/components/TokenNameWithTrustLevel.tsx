@@ -1,4 +1,3 @@
-import React from 'react'
 import { useFetch } from 'usehooks-ts'
 
 import { trustLevelBadge } from '@/utils'
