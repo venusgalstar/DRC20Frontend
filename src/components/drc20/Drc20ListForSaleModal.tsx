@@ -61,7 +61,7 @@ const Drc20ListForSaleModal = ({
   const [totalPotentialProceeds, setTotalPotentialProceeds] = useState<string>('0')
   const [networkFee, setNetworkFee] = useState<number>(0)
 
-  const [isPriorityChecked, setIsPriorityChecked] = useState<boolean>(false)
+  const [_isPriorityChecked, _setIsPriorityChecked] = useState<boolean>(false)
   const [isDiscountChecked, setIsDiscountChecked] = useState<boolean>(false)
   const [isWhitelistedUd, setIsWhitelistedUd] = useState<boolean>(false)
 
@@ -118,9 +118,11 @@ const Drc20ListForSaleModal = ({
     setVisible(false)
   }
 
+  /*
   const handlePriorityCheckbox = () => {
     setIsPriorityChecked(!isPriorityChecked)
   }
+  */
 
   const handleDiscountCheckbox = () => {
     setIsDiscountChecked(!isDiscountChecked)
@@ -139,6 +141,7 @@ const Drc20ListForSaleModal = ({
       const psdtHex = await getSellerPsdtHex(address, priceInShibes, txId, outputIndex, isDiscountChecked)
       const signedPsdtHex = await (window as any).dogeLabs.signPsbt(psdtHex)
       const { data } = await createDrc20Offer(signedPsdtHex)
+      data;
     } catch (e) {
       return
     }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
@@ -7,8 +7,8 @@ import {
 } from 'react-icons/md'
 import { useNavigate } from 'react-router-dom'
 
-import { getDrc20OfferList } from '@/api'
-import { ITEMS_PER_PAGE } from '@/types/common'
+//import { getDrc20OfferList } from '@/api'
+//import { ITEMS_PER_PAGE } from '@/types/common'
 import { truncateAddress } from '@/utils'
 import { ONE_DOGE_IN_SHIBES } from '@/utils/constants'
 
@@ -61,6 +61,10 @@ const Drc20Cards = ({
   drc20Cards,
   setTotalPages,
 }: Drc20CardProps) => {
+  fetchDrc20Offers;
+  totalOffers;
+  setTotalPages;
+
   const navigator = useNavigate()
   const ref = useRef<null | HTMLDivElement>(null)
 

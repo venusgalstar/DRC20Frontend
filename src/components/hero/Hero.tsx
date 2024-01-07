@@ -3,7 +3,7 @@ import { useInterval } from 'usehooks-ts'
 
 import { Feature } from '@/api'
 
-import { DoginalsCollection } from '../../types/dogeNft'
+//import { DoginalsCollection } from '../../types/dogeNft'
 import ActiveSlide from './ActiveSlide'
 import HeroCarousel from './HeroCarousel'
 import LeftArrow from './LeftArrow'

@@ -4,6 +4,9 @@ import { useNavigate, useRoutes } from 'react-router-dom'
 import ChampionsTCG from '@/pages/service/championsTCG'
 import Doginals from '@/pages/service/doginals'
 import Labradoge from '@/pages/service/labradoge'
+import Ranking from '@/pages/explorer/ranking'
+import Recently from '@/pages/explorer/recently'
+import Trending from '@/pages/explorer/trending'
 // import LabradogePackReveal from '@/pages/service/labradoge-pack-reveal'
 //import ReRoll from '@/pages/service/re-roll'
 //import routes from '~react-pages'
@@ -51,6 +54,9 @@ function App() {
         { path: '/service/inscribe/:tickParam/:maxMintParam', element: <Inscribe /> },
         // { path: '/unleash-doginals-inscribe', element: <Inscribe /> },
         { path: '/labradoges', element: <Doginals /> },
+        { path: '/explorer/ranking', element: <Ranking /> },
+        { path: '/explorer/recently', element: <Recently /> },
+        { path: '/explorer/trending', element: <Trending /> },
         // { path: '/labradoges/reveal/:inscriptionId', element: <LabradogePackReveal /> },
         { path: '/champions-tcg', element: <ChampionsTCG /> },
         { path: '/drc20/:tokenname', element: <TokenInfo /> },

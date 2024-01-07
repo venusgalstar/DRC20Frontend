@@ -53,7 +53,7 @@ const PageBase = ({ children }: { children: any }) => {
 
   const navigateTo = (e: any) => {
     switch (e.key) {
-      case 'home':
+      case 'home':        
         navigator('/marketplace')
         break
       case 'explorer/ranking':

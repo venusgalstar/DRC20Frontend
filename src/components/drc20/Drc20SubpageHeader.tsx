@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 import { getDrc20Data } from '@/api'
 import { AssetTransferTab } from '@/pages/AccountPage'
