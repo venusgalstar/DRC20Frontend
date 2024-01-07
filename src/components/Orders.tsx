@@ -22,7 +22,7 @@ const sortingOptions = [
 const Orders = () => {
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const [sorting, setSorting] = useState<number>(1)
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
   const url = useMemo(() => {
     switch (sorting) {
       case 1:

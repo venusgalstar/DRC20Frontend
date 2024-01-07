@@ -40,7 +40,7 @@ const Balances = () => {
         return
       }
       const url = `${
-        import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+        import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
       }/balances/${walletAddress}`
 
       try {

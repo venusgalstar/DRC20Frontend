@@ -33,7 +33,7 @@ const InscriptionNetworkFeeSlide = ({
   type,
   receivingAddress,
 }: InscriptionNetworkFeeSlideProps) => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
   const currentDogePriceUrl = `${baseUrl}/ticks/currentDogePrice`
   const { data: currentDogePrice } = useFetch(currentDogePriceUrl)
   const makePostRequest = usePostInscriptions({

@@ -11,7 +11,7 @@ import PageBase from '../_base'
 import '../index.css'
 
 const Ranking = () => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
 
   const columns = [
     BaseColumns.tick(),

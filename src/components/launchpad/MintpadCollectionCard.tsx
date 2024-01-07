@@ -50,7 +50,7 @@ const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
   launchpadMintedSupply = 0,
   highlightColor = '#FFAE42',
 }) => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
   const currentDogePriceUrl = `${baseUrl}/ticks/currentDogePrice`
   const { data: currentDogePrice } = useFetch<number>(currentDogePriceUrl)
 
@@ -119,7 +119,7 @@ const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
     // increment the doginal counter
     if (doginalName && symbol && activeStep === 0) {
       const url = `${
-        import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+        import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
       }/launchpad/inscribe?name=${symbol}&amount=${amount}&dogeAmount=${dogeAmount}&fundingAddress=${
         mintingConfig.fundingWalletAddress
       }&receiverAddress=${address}&txid=${fundingResult}`

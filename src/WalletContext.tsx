@@ -34,4 +34,5 @@ const useWalletContext = (): WalletContextType => {
   return context
 }
 
-export { useWalletContext, WalletProvider }
+export { useWalletContext }
+export { WalletProvider }

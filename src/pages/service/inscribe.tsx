@@ -373,7 +373,7 @@ const Inscribe = () => {
     if (inscriptionType === 'drc-20') {
       if (actionType === 'Mint') {
         const urlTickInfo = `${
-          import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api-rc.dogeord.io'
+          import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
         }/ticks/byName/${tick}`
         fetch(urlTickInfo)
           .then((response) => response.json())

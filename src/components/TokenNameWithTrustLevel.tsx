@@ -10,7 +10,7 @@ type TokenNameWithTrustLevel = {
 }
 
 const TokenNameWithTrustLevel = ({ tokenName, height = '16px', width = '16px' }: TokenNameWithTrustLevel) => {
-  const { data } = useFetch<any>(`https://d20-api-rc.dogeord.io/ticks/byName/${tokenName.toLowerCase()}`)
+  const { data } = useFetch<any>(`https://d20-api2.dogeord.io/ticks/byName/${tokenName.toLowerCase()}`)
   return (
     <div
       style={{
