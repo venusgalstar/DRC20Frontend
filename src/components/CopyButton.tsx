@@ -1,6 +1,5 @@
 import Icon, { CheckCircleOutlined } from '@ant-design/icons'
 import copy from 'copy-to-clipboard'
-import React, { useState } from 'react'
 
 type Props = any
 

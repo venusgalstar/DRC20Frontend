@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
@@ -14,7 +14,7 @@ import { ONE_DOGE_IN_SHIBES } from '@/utils/constants'
 
 import CustomToastContainer from '../CustomToastContainer'
 import DoginalCancelModal from '../doginals/DoginalCancelModal'
-import DoginalListForSaleModal from '../doginals/DoginalListForSaleModal'
+//import DoginalListForSaleModal from '../doginals/DoginalListForSaleModal'
 
 type DogeNftOverviewProps = {
   address?: string
@@ -26,7 +26,7 @@ const ITEMS_PER_PAGE = 100
 
 const RevokeDogeNftOverview = ({ address: propAddress, dogecoinPriceInUsd, searchValue }: DogeNftOverviewProps) => {
   const { pathname } = useLocation()
-
+  dogecoinPriceInUsd;
   const pathnameSplit = pathname.split('/')
   const address = propAddress || pathnameSplit[pathnameSplit.length - 1]
 
@@ -36,7 +36,7 @@ const RevokeDogeNftOverview = ({ address: propAddress, dogecoinPriceInUsd, searc
   const [currentPage, setCurrentPage] = useState<number>(1)
   const [totalPages, setTotalPages] = useState<number>(1)
 
-  const [doginalListForSaleModalVisible, setDoginalListForSaleModalVisible] = useState<boolean>(false)
+  const [_doginalListForSaleModalVisible, _setDoginalListForSaleModalVisible] = useState<boolean>(false)
   const [doginalCancelModalVisible, setDoginalCancelModalVisible] = useState<boolean>(false)
   const [listedUserDoginals, setListedUserDoginals] = useState<Record<string, DoginalOffer> | undefined>(undefined)
   const [dogeNftArray, setDogeNftArray] = useState<Array<DogeNft & { listed: boolean; unlisted: boolean }>>([])

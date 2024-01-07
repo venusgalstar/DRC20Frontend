@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { getDoginalsFromCollection } from '@/api'
 import { Doginal, DoginalsCollection } from '@/types/dogeNft'
 import { ONE_DOGE_IN_SHIBES } from '@/utils/constants'

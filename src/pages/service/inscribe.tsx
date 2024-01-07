@@ -7,7 +7,7 @@ import { useLocalStorage } from 'usehooks-ts'
 
 import { CheckCircleIcon } from '@/assets/icons/checkCircle'
 import { CreditIcon } from '@/assets/icons/creditcard'
-import BaseButton from '@/components/BaseButton'
+//import BaseButton from '@/components/BaseButton'
 import InputField from '@/components/InputField'
 import InscribeActionChooser from '@/components/InscribeActionChooser'
 import InscriptionNetworkFeeSlide, { FeeType } from '@/components/InscriptionNetworkFeeSlide'
@@ -75,7 +75,7 @@ const Inscribe = () => {
   let { maxMintParam } = useParams()
 
   const slider = useRef<Slider>(null)
-  const [recentlyUsedAddress, setRecentlyUsedAddress] = useLocalStorage('recentlyUsedAddress', '')
+  const [recentlyUsedAddress, _setRecentlyUsedAddress] = useLocalStorage('recentlyUsedAddress', '')
   const [formError, setFormError] = useState<null | string>(null)
   const [activeStep, setActiveStep] = useState(0)
   const [inscriptionType, setInscriptionType] = useState<InscriptionType>(types[0])
@@ -333,7 +333,7 @@ const Inscribe = () => {
       } else {
         const remainder = amount % maxPerMint
         let arr: number[] = []
-        loop(multiplier, (i) => arr.push(maxPerMint))
+        loop(multiplier, (_i) => arr.push(maxPerMint))
 
         remainder > 0 && arr.push(remainder)
         const newContents = arr.map((x) => ({

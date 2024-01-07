@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'
 
 import { OverviewCard } from '@/components/labradoge'
@@ -23,6 +23,7 @@ export function Collection({
   emptyMessage = "You don't have any Labradoge Doginals yet.",
   containerStyle,
 }: CollectionProps) {
+  isActive;
   const { connected } = useWalletContext()
   const navigator = useNavigate()
   const { setCollections, doginals, collectionLoadingStatus } = useCollectionData()

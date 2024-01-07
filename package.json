@@ -14,6 +14,7 @@
     "@mui/material": "^5.15.3",
     "@sentry/react": "^7.91.0",
     "@tanstack/react-table": "^8.11.3",
+    "@types/react-slick": "^0.23.13",
     "antd": "^5.12.7",
     "axios": "^1.6.4",
     "axios-retry": "^4.0.0",

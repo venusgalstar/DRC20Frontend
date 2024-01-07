@@ -1,5 +1,5 @@
-import { Segmented, Tooltip } from 'antd'
-import React, { useEffect, useState, useMemo } from 'react';
+import { Tooltip } from 'antd'
+import { useState, useMemo } from 'react';
 
 import { CautionCircleIcon as CautionIcon } from '@/assets/icons/cautionCircleIcon'
 import { QuestionCircleIcon as QuestionIcon } from '@/assets/icons/questionCircleIcon'
@@ -24,14 +24,14 @@ type Tab = 'Holders' | 'Transfers'
 type SubTab = 'All' | 'Inscribe-Mint' | 'Inscribe-Transfer' | 'Transfer'
 
 const HoldersAndTransfersTable = ({ tokenSymbol }: HoldersAndTransfersTableProps) => {
-  const [tab, setTab] = useState<Tab>('Holders')
-  const [subTab, setSubTab] = useState<SubTab>('All')
+  const [_tab, _setTab] = useState<Tab>('Holders')
+  const [subTab, _setSubTab] = useState<SubTab>('All')
   const { data: holdersData, error: holdersError } = useTokenHoldersInfo({ tokenSymbol })
 
   const {
     data: allTransfers,
     error: transfersError,
-    refetch: refetchTransfers,
+    refetch: _refetchTransfers,
   } = useMockTokenTransfersInfo({ tokenSymbol })
 
   const color = (status: TokenTransfersInfo['status'], isBorder: boolean) => {
@@ -60,6 +60,7 @@ const HoldersAndTransfersTable = ({ tokenSymbol }: HoldersAndTransfersTableProps
     }
   }, [allTransfers, subTab])
   const isLoadingTransfers = useMemo(() => !transfersError && !transfersData, [transfersError, transfersData])
+  isLoadingTransfers;
   const warning = (status: TokenTransfersInfo['status']) => {
     switch (status) {
       case 'invalid':
@@ -229,7 +230,8 @@ const HoldersAndTransfersTable = ({ tokenSymbol }: HoldersAndTransfersTableProps
       enableGlobalFilter: true,
     },
   ]
-
+  transfersColumns;
+  
   return (
     <>
       {holdersError && <ErrorSection />}

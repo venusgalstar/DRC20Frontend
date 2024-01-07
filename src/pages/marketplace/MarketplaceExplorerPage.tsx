@@ -1,20 +1,20 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 
 import Hero from '@/components/hero/Hero'
 import { LoadingView } from '@/components/labradoge/loadingView/loadingView'
 import Sentry from '@/main'
-import { PaginationInfo } from '@/types/common'
+//import { PaginationInfo } from '@/types/common'
 import { LANDING_PAGE_DOGE_NFT_ITEMS_PER_PAGE, LANDING_PAGE_DRC20_ITEMS_PER_PAGE } from '@/utils/constants'
 
 import {
   Feature,
   getAllDoginalCollections,
   getDoginalsFromCollection,
-  getDrc20Data,
+  //getDrc20Data,
   getDrc20List,
   getFeatures,
 } from '../../api'
-import LoadingSpinnerIcon from '../../components/LoadingSpinnerIcon'
+//import LoadingSpinnerIcon from '../../components/LoadingSpinnerIcon'
 import Trending from '../../components/marketplace/Trending'
 import { DoginalsCollection } from '../../types/dogeNft'
 import { Drc20Data, Drc20List } from '../../types/drc20'

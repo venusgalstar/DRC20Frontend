@@ -1,5 +1,5 @@
 import { Tag } from 'antd'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useRef, useState } from 'react'
 
 import { UploadIcon } from '@/assets/icons/upload'
 
@@ -18,7 +18,7 @@ const SliderFileUploadForm = ({
   onChangeFile,
   file,
 }: SliderFileUploadFormProps) => {
-  const [error, setError] = useState<string | null>(null)
+  const [error, _setError] = useState<string | null>(null)
   const fileInputRef = useRef(null)
 
   const handleDrop = (event: any) => {

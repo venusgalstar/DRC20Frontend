@@ -5,8 +5,8 @@ import {
     MdKeyboardDoubleArrowRight,
   } from 'react-icons/md'
   import { useNavigate } from 'react-router'
-  import React, { useEffect, useState, useMemo, useCallback } from 'react';  
-  import { getDoginalOfferActivity, getDrc20Activity } from '@/api'
+  import { useEffect, useState} from 'react';  
+  import { getDoginalOfferActivity } from '@/api'
   import { ActivitySortTypes, ActivitySortTypeToActivity } from '@/types/common'
   import { truncateAddress } from '@/utils'
   import { ONE_DOGE_IN_SHIBES } from '@/utils/constants'
@@ -63,6 +63,7 @@ import {
     activityType,
     handleRefresh,
   }: ActivityTableProps) => {
+    searchValue;
     const navigate = useNavigate()
     const [activityTable, setActivityTable] = useState<Activity[]>([])
     const [currentPage, setCurrentPage] = useState<number>(1)

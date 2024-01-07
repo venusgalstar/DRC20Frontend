@@ -4,11 +4,11 @@ import Slider from 'react-slick'
 import { useFetch } from 'usehooks-ts'
 
 import AmountInput from '@/components/AmountInput'
-import DoginalInscriptionProgress from '@/components/DoginalInscriptionProgress'
+//import DoginalInscriptionProgress from '@/components/DoginalInscriptionProgress'
 import WalletConnect from '@/components/WalletConnect'
 import { useWalletContext } from '@/WalletContext'
 
-import InputField from '../../InputField'
+//import InputField from '../../InputField'
 import ServiceContentContainer from '../../ServiceContentContainer'
 
 import 'slick-carousel/slick/slick.css'
@@ -112,10 +112,11 @@ const CollectionMintingCard: React.FC<CollectionMintingCardProps> = ({
       }/doginals/inscriptionrequest?name=${doginalName}&amount=${amount}&dogeAmount=${dogeAmount}&fundingAddress=${
         mintingConfig.fundingWalletAddress
       }&receiverAddress=${address}&txid=${fundingResult}`
-
+      
       try {
-        const response = await fetch(url)
-        const rawData = await response.json()
+        url;
+        //const response = await fetch(url)
+        //const rawData = await response.json()
         // @todo: handle error
       } catch (error) {
         console.error(error)

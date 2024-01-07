@@ -5,7 +5,7 @@ import {
   MdKeyboardDoubleArrowRight,
 } from 'react-icons/md'
 import { useNavigate } from 'react-router'
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { ActionTypeKeys, getDrc20Activity } from '@/api'
 import { ActivitySortTypes, ActivitySortTypeToActivity } from '@/types/common'
@@ -59,6 +59,7 @@ enum Columns {
 }
 
 const ActivityTable = ({ tick, searchValue, dogecoinPriceInUsd, activityType, handleRefresh }: ActivityTableProps) => {
+  searchValue;
   const navigate = useNavigate()
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)

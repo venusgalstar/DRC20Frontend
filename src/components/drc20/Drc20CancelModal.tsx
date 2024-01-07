@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { getCancelPsdtHex, getDrc20Offer, getUtxoFromInscriptionId, unlistDrc20Offer } from '@/api'
 import useToast from '@/hooks/useToast'
 import { TransferInscription } from '@/types/transferInscriptions'
@@ -45,11 +45,11 @@ const Drc20CancelModal = ({ visible, setVisible, transferInscription, address }:
     if (drc20OfferRes && drc20OfferRes.data.offer.offerId) {
       // @TODO: add txHash to unlistDrc20Offer call
       const { res, err: unlistDrc20OfferErr } = await unlistDrc20Offer(drc20OfferRes!.data.offer.offerId, address)
-
+      res;
       if (unlistDrc20OfferErr) {
         await generateJwt(address)
         const { res, err } = await unlistDrc20Offer(drc20OfferRes!.data.offer.offerId, address)
-
+        res;
         if (err) {
           setLoading(false)
           throw new Error(`Unable to unlist offer: ${err.message}`)

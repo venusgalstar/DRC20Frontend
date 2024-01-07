@@ -1,5 +1,5 @@
 import { MdRefresh } from 'react-icons/md'
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 
 const RefreshButton = ({
   refetchData,

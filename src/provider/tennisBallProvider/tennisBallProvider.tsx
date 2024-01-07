@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { createContext, useCallback, useMemo, useState } from 'react'
 
 import { TennisBallApi, TennisBallProviderProps } from '@/provider/tennisBallProvider/tennisBallProvider.types'
 import { TennisBall } from '@/types/reRoll'

@@ -218,6 +218,7 @@ const FeaturesRow: React.FC<FeaturesRowProps> = ({ feature, onEdit, onMoveUp, on
   const handleEdit = (field: string, value: string) => {
     onEdit(feature, field, value)
   }
+  handleEdit;
   
   return (
     <div className="border-2 p-2 flex justify-between w-1/2 flex-1 rounded-xl">

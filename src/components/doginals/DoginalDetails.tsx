@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
 
 import { truncateAddress, truncateInscriptionId } from '@/utils'

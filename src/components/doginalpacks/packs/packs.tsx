@@ -1,14 +1,11 @@
 import { AlignLeftOutlined } from '@ant-design/icons'
 import { Collapse } from 'antd'
-import React from 'react'
 
 import CollectionMintingCard, {
   CollectionMintingCardProps,
 } from '@/components/doginalpacks/collection/CollectionMintingCard'
 import ImageCarousel from '@/components/doginalpacks/collection/ImageCarousel'
 import { MintingPageContainer } from '@/components/launchpad/MintingPageContainer'
-
-import styles from './packs.module.scss'
 
 const { Panel } = Collapse
 

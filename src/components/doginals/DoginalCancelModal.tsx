@@ -1,12 +1,12 @@
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import React, { useState } from 'react';
 import {
     getCancelPsdtHex,
     getDoginalOffer,
-    getDrc20Offer,
-    getPsdtFromOfferId,
+    //getDrc20Offer,
+    //getPsdtFromOfferId,
     getUtxoFromInscriptionId,
     unlistDoginalOffer,
-    unlistDrc20Offer,
+    //unlistDrc20Offer,
   } from '@/api'
   import useToast from '@/hooks/useToast'
   import { DogeNft } from '@/types/dogeNft'
@@ -57,11 +57,11 @@ import {
       // @TODO: add txHash to unlistDoginalOffer call
       if (offer) {
         const { res, err: unlistDrc20OfferErr } = await unlistDoginalOffer(offer.offerId, address)
-  
+        res;
         if (unlistDrc20OfferErr) {
           await generateJwt(address)
           const { res, err } = await unlistDoginalOffer(offer.offerId, address)
-  
+          res;
           if (err) {
             setLoading(false)
             throw new Error(`Unable to unlist offer: ${err.message}`)

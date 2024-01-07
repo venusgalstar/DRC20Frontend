@@ -9,7 +9,7 @@ import {
 } from '@tanstack/react-table'
 import { Button, Popover, Progress } from 'antd'
 import debounce from 'lodash.debounce'
-import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import { useFetch, useWindowSize } from 'usehooks-ts'
 
 import PercentValue from '@/components/PercentValue'

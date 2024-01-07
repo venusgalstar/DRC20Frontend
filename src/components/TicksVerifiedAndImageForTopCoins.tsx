@@ -1,5 +1,5 @@
-import { Popover, Tooltip } from 'antd'
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { Popover } from 'antd'
+import { useEffect, useState } from 'react';
 
 export default function TicksVerifiedAndImageForTopCoins({
   row,

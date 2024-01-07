@@ -5,7 +5,7 @@ import { Doginal } from '@/types/dogeNft'
 import { ONE_DOGE_IN_SHIBES } from '@/utils/constants'
 
 import CustomToastContainer from '../CustomToastContainer'
-import { LoadingView } from '../labradoge/loadingView/loadingView'
+//import { LoadingView } from '../labradoge/loadingView/loadingView'
 
 const ITEMS_PER_PAGE = 20
 
@@ -17,8 +17,9 @@ type DoginalCardProps = {
 }
 
 const DoginalCards = ({ doginalsData, filterOpen, showCollectionOffers }: DoginalCardProps) => {
-  const [currentPage, setCurrentPage] = useState<number>(1)
-  const [totalPages, setTotalPages] = useState<number>(1)
+  showCollectionOffers;
+  const [_currentPage, setCurrentPage] = useState<number>(1)
+  const [_totalPages, setTotalPages] = useState<number>(1)
   const [currentItems, setCurrentItems] = useState<Doginal[]>()
   const navigator = useNavigate()
 

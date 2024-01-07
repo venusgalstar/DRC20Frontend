@@ -7,7 +7,7 @@ import {
   useReactTable,
 } from '@tanstack/react-table'
 import { Button, Popover, Progress } from 'antd'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useWindowSize } from 'usehooks-ts'
 
 import PercentValue from '@/components/PercentValue'
@@ -126,7 +126,7 @@ export const Table = ({
             ))}
           </thead>
           <tbody>
-            {table.getRowModel().rows.map((row, index) => (
+            {table.getRowModel().rows.map((row, _index) => (
               <tr
                 key={row.id}
                 style={{
@@ -163,7 +163,7 @@ export default Table
 export const BaseColumns = {
   tick: () => ({
     id: 'tick',
-    header: (cellContent: any) => (
+    header: (_cellContent: any) => (
       <div className="text-left pl-4" style={{ minWidth: '100px' }}>
         Name
       </div>

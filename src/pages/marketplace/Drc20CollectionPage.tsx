@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import React, { createContext, useCallback, useMemo, useRef, useState, useEffect } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { getDogecoinPriceInUsd, getDrc20OfferList } from '@/api'
 import ActivitySorter from '@/components/ActivitySorter'
 import ActivityTable from '@/components/ActivityTable'
@@ -19,7 +19,7 @@ type Drc20SubpageProps = {
   address: string
 }
 
-const Drc20CollectionPage = ({ address }: Drc20SubpageProps) => {
+const Drc20CollectionPage = ({ }: Drc20SubpageProps) => {
   const { pathname } = useLocation()
   const tick = decodeURIComponent(pathname.split('/')[3])
 
@@ -35,7 +35,7 @@ const Drc20CollectionPage = ({ address }: Drc20SubpageProps) => {
   const [selectedSortByPriceType, setSelectedSortByPriceType] = useState<SortByPriceTypes>(
     SortByPriceTypes.PriceAscending
   )
-  const [activityRefresh, setAcitivityRefresh] = useState<boolean>()
+  const [_activityRefresh, setAcitivityRefresh] = useState<boolean>()
 
   useEffect(() => {
     const fetchDogePriceInUsd = async () => {

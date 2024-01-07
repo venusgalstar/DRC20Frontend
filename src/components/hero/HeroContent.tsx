@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Feature } from '@/api'
 
 import HeroButton from './HeroButton'

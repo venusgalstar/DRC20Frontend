@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 
 import { fetchIntervall } from '@/utils/fetch'
 import { currencyFormatter } from '@/utils/numberFormatter'
