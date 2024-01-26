@@ -16,7 +16,7 @@ const useInscriptionPricing = ({ inscriptionType, contents }: InscriptionPricing
         switch (inscriptionType) {
           case 'drc-20':
             return {
-              url: `${baseUrl}/inscribe/job/drc-20/pricing`,
+              url: `https://thedragontest.com/api/inscribe/job/drc-20/pricing`,
               requestData: {
                 inscriptionContent: contents,
               },

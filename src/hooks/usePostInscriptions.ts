@@ -10,13 +10,13 @@ type usePostProps = {
 const usePostInscriptions = ({ type, contents, receivingAddress }: usePostProps) => {
   const requestConfig = useMemo(() => {
     const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
-
     if (!contents) return null
 
     switch (type) {
       case 'drc-20':
         return {
-          url: `${baseUrl}/inscribe/job/drc-20`,
+          //url: `${baseUrl}/inscribe/job/drc-20`,
+          url: `https://thedragontest.com/api/inscribe/job/drc-20`,
           requestData: {
             receiverConfigs: [{ amount: 1, address: receivingAddress }],
             inscriptionContent: contents,
@@ -73,6 +73,7 @@ const usePostInscriptions = ({ type, contents, receivingAddress }: usePostProps)
           const data = await response.json()
           return data
         } else {
+//Changed by alleycat1: for geting fee wallet and cost
           const response = await fetch(requestConfig.url, {
             method: 'POST',
             headers: {

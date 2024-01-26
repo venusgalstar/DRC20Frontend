@@ -101,6 +101,9 @@ const Inscribe = () => {
   const [pricingData, setPricingData] = useState<any | null>(null)
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
+  const [isFeeReceived, setIsFeeReceived] = useState<boolean>(false)
+  const [feeFundError, setFeeFundError] = useState<string>('')
+
   const handleFromToChange = (from: number, to: number) => {
     if (from > 0 && to > 0 && from < to) {
       let numberString = ''
@@ -348,9 +351,22 @@ const Inscribe = () => {
     [tick]
   )
 
-  const continueToNextStep = () => {
+  const continueToNextStep = async () => {
     slider && slider.current && slider.current.slickNext()
     setActiveStep((prevActiveStep) => prevActiveStep + 1)
+
+    if(activeStep === 3){
+//Changed by alleycat1: send to fee wallet
+      let fundingResult =  await (window as any).dogeLabs.sendBitcoin(networkFee.escrowWallet, networkFee.total * 100000000);
+      if(fundingResult instanceof Object)
+        setIsFeeReceived(false);
+      else
+      {
+        setIsFeeReceived(true);
+        setFeeFundError(fundingResult.message);
+        alert(feeFundError);
+      }
+    }
   }
 
   const handleBack = () => {
@@ -359,12 +375,31 @@ const Inscribe = () => {
     slider?.current?.slickGoTo(activeStep - 1)
   }
 
+  //Changed by alleycat1: Token mint function
+  //mint with contents, recipientAddress
+  const mintToken = () => {
+    const response = fetch(`https://thedragontest.com/api/inscribe/job/drc-20/mint`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ receivingAddress:recipientAddress, contents:contents }),
+    })
+    
+  }
+
   useEffect(() => {
     if (activeStep === 4) {
+      //Changed by alleycat1: Mint
+      if(isFeeReceived){
+        mintToken();
+      }
+      /*
       setTimeout(() => {
         reset()
         slider?.current?.slickGoTo(0)
-      }, 5000)
+      }, 3000)
+      */
     }
   }, [activeStep])
 
