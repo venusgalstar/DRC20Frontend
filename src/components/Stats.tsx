@@ -87,12 +87,12 @@ const Stats = () => {
 
   return (
     <div>
-      <div className="show-mobile-only-flex">
+      <div className="show-mobile-only-flex" style={{backgroundColor:'#8EFFF1'}}>
         {counter % 3 === 0 ? (
           <>
             <span
               style={{
-                color: '#feb628',
+                color: '#000',
                 fontSize: '11px',
                 lineHeight: '48px',
                 marginRight: '10px',
@@ -103,7 +103,7 @@ const Stats = () => {
             </span>
             <span
               style={{
-                color: '#feb628',
+                color: '#000',
                 fontSize: '12px',
                 fontWeight: 'bold',
                 lineHeight: '48px',
@@ -117,7 +117,7 @@ const Stats = () => {
           <>
             <span
               style={{
-                color: '#feb628',
+                color: '#000',
                 fontSize: '11px',
                 lineHeight: '48px',
                 marginRight: '10px',
@@ -128,7 +128,7 @@ const Stats = () => {
             </span>
             <span
               style={{
-                color: '#feb628',
+                color: '#000',
                 fontSize: '12px',
                 fontWeight: 'bold',
                 lineHeight: '48px',
@@ -153,7 +153,7 @@ const Stats = () => {
             </span>
             <span
               style={{
-                color: '#feb628',
+                color: '#000',
                 fontSize: '12px',
                 fontWeight: 'bold',
                 lineHeight: '48px',
@@ -168,7 +168,7 @@ const Stats = () => {
       <div className="hide-mobile-flex">
         <span
           style={{
-            color: '#feb628',
+            color: '#000',
             fontSize: '11px',
             lineHeight: '48px',
             marginRight: '10px',
@@ -179,7 +179,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#feb628',
+            color: '#000',
             fontSize: '12px',
             fontWeight: 'bold',
             lineHeight: '48px',
@@ -191,7 +191,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#feb628',
+            color: '#000',
             fontSize: '11px',
             lineHeight: '48px',
             marginLeft: '70px',
@@ -203,7 +203,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#feb628',
+            color: '#000',
             fontSize: '12px',
             fontWeight: 'bold',
             lineHeight: '48px',
@@ -214,7 +214,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#feb628',
+            color: '#000',
             fontSize: '11px',
             lineHeight: '48px',
             marginLeft: '70px',
@@ -226,7 +226,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#feb628',
+            color: '#000',
             fontSize: '12px',
             fontWeight: 'bold',
             lineHeight: '48px',

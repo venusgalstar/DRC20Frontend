@@ -135,8 +135,8 @@ const PageBase = ({ children }: { children: any }) => {
       <div
         style={{
           justifyContent: 'center',
-          background: '#000',
-          color: '#fff',
+          background: '#8EFFF1',
+          color: '#000',
           height: '48px',
           paddingRight: '10px',
           position: 'absolute',
