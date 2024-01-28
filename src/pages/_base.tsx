@@ -128,14 +128,15 @@ const PageBase = ({ children }: { children: any }) => {
     <Layout
       className="layout"
       style={{
-        backgroundColor: '#ffffff',
-        color: '#000000',
+        backgroundColor: '#000',
+        color: '#fff',
       }}
     >
       <div
         style={{
           justifyContent: 'center',
-          background: '#ffffff',
+          background: '#000',
+          color: '#fff',
           height: '48px',
           paddingRight: '10px',
           position: 'absolute',
@@ -155,7 +156,8 @@ const PageBase = ({ children }: { children: any }) => {
             <td>
               <Header
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: '#000',
+                  color: '#fff',
                   position: 'relative',
                   height: '50px',
                   zIndex: 1,
@@ -185,7 +187,7 @@ const PageBase = ({ children }: { children: any }) => {
                   className="ant-menu-style"
                   style={{
                     backgroundColor: 'transparent',
-                    color: '#000000',
+                    color: '#fff',
                     fontSize: '14px',
                     fontWeight: 'bold',
                     top: 0,
@@ -253,7 +255,6 @@ const PageBase = ({ children }: { children: any }) => {
                     <Disclaimer acceptDisclaimer={acceptDisclaimer} />
                   )}
                 </div>
-                <img id="doge" src="/doge.png" />
               </Content>
             </td>
           </tr>
@@ -261,7 +262,7 @@ const PageBase = ({ children }: { children: any }) => {
             <td>
               <Footer
                 style={{
-                  backgroundColor: '#ffffff',
+                  backgroundColor: '#000',
                   color: '#64748b',
                   fontSize: '16px',
                   maxWidth: '1280px',

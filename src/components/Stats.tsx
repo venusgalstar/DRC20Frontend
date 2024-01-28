@@ -92,7 +92,7 @@ const Stats = () => {
           <>
             <span
               style={{
-                color: '#000000',
+                color: '#feb628',
                 fontSize: '11px',
                 lineHeight: '48px',
                 marginRight: '10px',
@@ -117,7 +117,7 @@ const Stats = () => {
           <>
             <span
               style={{
-                color: '#000000',
+                color: '#feb628',
                 fontSize: '11px',
                 lineHeight: '48px',
                 marginRight: '10px',
@@ -168,7 +168,7 @@ const Stats = () => {
       <div className="hide-mobile-flex">
         <span
           style={{
-            color: '#000000',
+            color: '#feb628',
             fontSize: '11px',
             lineHeight: '48px',
             marginRight: '10px',
@@ -191,7 +191,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#000000',
+            color: '#feb628',
             fontSize: '11px',
             lineHeight: '48px',
             marginLeft: '70px',
@@ -214,7 +214,7 @@ const Stats = () => {
         </span>
         <span
           style={{
-            color: '#000000',
+            color: '#feb628',
             fontSize: '11px',
             lineHeight: '48px',
             marginLeft: '70px',
