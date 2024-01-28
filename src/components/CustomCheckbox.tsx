@@ -12,18 +12,19 @@ type CheckboxProps = {
 const CustomCheckbox = ({ onChange, label, checked = false, explanationPopover }: CheckboxProps) => {
   return (
     <div style={{ marginInlineEnd: '9px' }}>
+      {label && <span style={{ fontWeight: 'bold', color:'black'}}>{label}</span>}
+      <br></br>
       <Checkbox
         checked={checked}
         onChange={onChange}
         sx={{
-          color: '#FFAE42',
+          color: '#fff',
           '&.Mui-checked': {
-            color: '#FFAE42',
+            color: '#fff',
             borderRadius: '15px',
           },
         }}
       />
-      {label && <span style={{ fontWeight: 'bold' }}>{label}</span>}
       {explanationPopover && <InfoPopover content={explanationPopover} />}
     </div>
   )

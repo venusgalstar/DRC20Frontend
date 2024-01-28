@@ -125,7 +125,7 @@ const Drc20CollectionPage = ({ }: Drc20SubpageProps) => {
               secondButtonContent="Activity"
               setActiveButtonIndex={setActiveButtonIndex}
             />
-            <div className="border-b-2 border-account-page-default w-full flex flex-row justify-end items-center pb-3 gap-2">
+            <div className="border-account-page-default flex flex-row justify-end items-center pb-3 gap-2">
               <SortByPrice
                 selectedSortType={selectedSortByPriceType}
                 setSelectedSortType={setSelectedSortByPriceType}

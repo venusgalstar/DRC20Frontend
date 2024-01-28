@@ -18,7 +18,7 @@ const TypeFilter = ({
   }, [setDisplayedType])
 
   return (
-    <div className="flex">
+    <div className="flex w-full justify-center">
       <button
         className={`py-2 px-6 md:w-32 md:text-sm ${
           displayedType === DisplayType.DOGINALS ? 'border-b-2 border-amber-500' : 'border-b-2 border-[#EFF2F5]'

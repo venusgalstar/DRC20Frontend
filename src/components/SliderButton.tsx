@@ -12,14 +12,14 @@ const SliderButton = ({
   isDisabled,
   onClick,
   style = {
-    background: '#feb628',
-    border: 'none',
-    borderRadius: '16px',
+    background: '#000',
+    border: '1px solid',
+    borderRadius: '1px',
     color: 'white',
     fontWeight: 'bold',
     height: '40px',
     margin: '48px 0 16px 0',
-    width: '260px',
+    width: '160px',
   },
 }: SliderButtonProps) => {
   return (

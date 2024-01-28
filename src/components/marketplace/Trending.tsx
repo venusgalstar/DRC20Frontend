@@ -106,7 +106,7 @@ export const Trending = ({
     <div className="flex flex-col w-full md:mt-14">
       <div className="flex flex-row w-full">
         <TypeFilter displayedType={displayedType} setDisplayedType={onSetDisplayedType} />
-        <div className="border-b-2 border-[#EFF2F5] w-full flex flex-row justify-end items-center pb-3 gap-2">
+        <div className="flex flex-row justify-end items-center pb-3 gap-2">
           <RefreshButton refetchData={refetchData} setIsSorting={setIsSorting} />
           <Search
             searchValue={searchValue}

@@ -34,7 +34,7 @@ const ServiceContentContainer = ({
     <div
       style={{
         position: 'relative',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#01ffe1',
         border: '2px solid #f5f5f5',
         borderRadius: '16px',
         margin: 'auto',

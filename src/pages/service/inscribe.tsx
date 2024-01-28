@@ -497,7 +497,7 @@ const Inscribe = () => {
           />
         </div>
 
-        <ServiceContentContainer header={SlideHeaderManager()} minHeight="590px">
+        <ServiceContentContainer header={SlideHeaderManager()} minHeight="550px">
           <Slider ref={slider} {...sliderSettings}>
             {/* SLIDE # 1 */}
             <div>

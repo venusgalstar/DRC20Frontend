@@ -148,7 +148,7 @@ function RevokePage({ address }: AddressConsumingProps) {
           </div>
           <div className="flex w-full mb-4">
             <TypeFilter displayedType={displayedType} setDisplayedType={setDisplayedType} />
-            <div className="border-b-2 border-[#EFF2F5] w-full flex flex-row justify-end items-center pb-3 gap-2">
+            <div className="flex flex-row justify-end items-center pb-3 gap-2">
               <RefreshButton refetchData={handleRefreshButtonClick} setIsSorting={() => {}} />
               <Search searchValue={searchValue} setSearchValue={setSearchValue} displayedType={displayedType} />
             </div>
