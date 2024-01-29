@@ -78,7 +78,7 @@ export default function TicksVerifiedAndImageForTopCoins({
       </div>
       <Popover content={tickId} trigger="hover" placement="right">
         <a href={`/drc20/${row.tick}`} rel="noopener noreferrer">
-          <span style={{ fontWeight: 'bold', textAlign: 'left', color: '#000', textDecoration: 'none' }}>
+          <span style={{ fontWeight: 'bold', textAlign: 'left', color: '#fff', textDecoration: 'none' }}>
             {row.tick}
           </span>
         </a>

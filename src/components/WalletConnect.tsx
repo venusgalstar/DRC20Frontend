@@ -103,7 +103,7 @@ const WalletConnect: React.FC<WalletConnectInputProps> = ({
                 <BiWallet />
               </div>
               <div className={!hideDoggy ? 'border-r-2' : ''}>
-                <div className="md:px-1 whitespace-nowrap px-1 py-1.5 md:py-2" style={{ color: textColor }}>
+                <div className="md:px-1 whitespace-nowrap px-1 py-1.5 md:py-2" style={{ color: '#fff' }}>
                   {(balance.confirmed / 100000000).toFixed(2)} DOGE
                 </div>
               </div>

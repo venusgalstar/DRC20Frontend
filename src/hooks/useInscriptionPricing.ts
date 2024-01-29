@@ -10,7 +10,7 @@ const useInscriptionPricing = ({ inscriptionType, contents }: InscriptionPricing
   const makeInscriptionPricingRequest = useCallback(
     async (isPriority: boolean) => {
       const requestConfig = () => {
-        const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+        const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
         if (!contents || !inscriptionType) return null
 
         switch (inscriptionType) {

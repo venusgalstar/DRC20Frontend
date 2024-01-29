@@ -22,7 +22,7 @@ const sortingOptions = [
 const Orders = () => {
   const [isLoadingMore, setIsLoadingMore] = useState(false)
   const [sorting, setSorting] = useState<number>(1)
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   const url = useMemo(() => {
     switch (sorting) {
       case 1:
@@ -73,7 +73,7 @@ const Orders = () => {
             style={{ minWidth: '70px', fontWeight: 'bold' }}
           >
             <a href={`/drc20/${tokenName.toLowerCase()}`} target="_blank" rel="noopener noreferrer">
-              <span style={{ fontWeight: 'bold', textAlign: 'left', color: '#000', textDecoration: 'none' }}>
+              <span style={{ fontWeight: 'bold', textAlign: 'left', color: '#fff', textDecoration: 'none' }}>
                 {tokenName.toLowerCase()}
               </span>
             </a>

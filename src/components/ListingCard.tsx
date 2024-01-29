@@ -18,7 +18,7 @@ const ListingCard = ({
   listedBy,
   discordLink,
 }: Listing) => {
-  //const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  //const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   //const url = `${baseUrl}/ticks/byName/${tokenSymbol.toLowerCase()}`
   //let { data } = useFetch<AFetchResult>(url)
 
@@ -52,7 +52,7 @@ const ListingCard = ({
           <img src={imgSrc} onError={handleError} alt="tokenIcon" style={{ display: 'none' }} />
         </div>
         <a href={`/drc20/${tokenName.toLowerCase()}`} target="_blank" rel="noopener noreferrer">
-          <span style={{ fontWeight: 'bold', textAlign: 'left', color: '#000', textDecoration: 'none' }}>
+          <span style={{ fontWeight: 'bold', textAlign: 'left', color: '#fff', textDecoration: 'none' }}>
             {tokenName.toLowerCase()}
           </span>
         </a>

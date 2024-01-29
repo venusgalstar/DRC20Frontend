@@ -391,7 +391,7 @@ const Inscribe = () => {
     if (inscriptionType === 'drc-20') {
       if (actionType === 'Mint') {
         const urlTickInfo = `${
-          import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+          import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
         }/ticks/byName/${tick}`
         fetch(urlTickInfo)
           .then((response) => response.json())
@@ -497,7 +497,7 @@ const Inscribe = () => {
           />
         </div>
 
-        <ServiceContentContainer header={SlideHeaderManager()} minHeight="550px">
+        <ServiceContentContainer header={SlideHeaderManager()} minHeight="540px">
           <Slider ref={slider} {...sliderSettings}>
             {/* SLIDE # 1 */}
             <div>
@@ -646,6 +646,7 @@ const Inscribe = () => {
               style={{
                 position: 'absolute',
                 border: '1px solid #f5f5f5',
+                color: '#fff',
                 borderRadius: '16px',
                 fontWeight: 'bold',
                 height: '40px',

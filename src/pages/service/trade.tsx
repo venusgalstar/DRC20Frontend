@@ -24,7 +24,7 @@ const Trade = () => {
   const [listingSorting, setListingSorting] = useState<number>(1)
   let navigate = useNavigate()
   const { search: params } = useLocation()
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   //const url = `${baseUrl}/ticks/list/ranking?size=10000&page=0`
 
   const navigateTo = (e: any) => {

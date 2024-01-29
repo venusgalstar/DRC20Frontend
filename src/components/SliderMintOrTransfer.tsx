@@ -24,7 +24,7 @@ const SliderMintOrTransfer = ({
   setRecipientAddress,
 }: SliderMintOrTransferProps) => {
   const urlTickList = `${
-    import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+    import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   }/ticks/list/recentlyAdded?size=100000&page=0`
 
   const { data: dataTicks } = useFetch<any>(urlTickList)

@@ -9,7 +9,7 @@ type usePostProps = {
 
 const usePostInscriptions = ({ type, contents, receivingAddress }: usePostProps) => {
   const requestConfig = useMemo(() => {
-    const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+    const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
     if (!contents) return null
 
     switch (type) {

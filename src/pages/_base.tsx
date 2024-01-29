@@ -136,7 +136,7 @@ const PageBase = ({ children }: { children: any }) => {
         style={{
           justifyContent: 'center',
           backgroundImage: 'linear-gradient(to right, #8EFFF1, #fff)',
-          color: '#000',
+          color: '#fff',
           height: '48px',
           paddingRight: '10px',
           position: 'absolute',

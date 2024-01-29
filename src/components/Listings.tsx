@@ -22,7 +22,7 @@ type ListingsProps = {
 }
 
 const Listings = ({ filter, onChangeFilter, sorting = 1, sortingOptions, onChangeSorting }: ListingsProps) => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   const url = `${baseUrl}/trading/listings?size=10000&page=0&status=listed`
 
   let { data: fetchedData, error: fetchedError } = useFetch<Listing[]>(url)

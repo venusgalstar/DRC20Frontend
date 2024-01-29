@@ -83,7 +83,7 @@ export default function TicksVerifiedAndImage({
             style={{
               fontWeight: 'bold',
               textAlign: 'left',
-              color: '#000',
+              color: '#fff',
               textDecoration: 'none',
             }}
           >

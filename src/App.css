@@ -6743,7 +6743,7 @@ img#doge:hover {
 .drc20Table tbody tr td:first-child {
 	position: sticky;
 	left: 0;
-	background-color: #feffff;
+	background-color: #000;
 	z-index: 2
 }
 
@@ -7082,7 +7082,7 @@ a:hover {
 
 	.xxs\:bg-similar-to-bg-color {
 		--tw-bg-opacity: 1;
-		background-color: rgb(253 253 255 / var(--tw-bg-opacity))
+		background-color: rgb(0 0 0 / var(--tw-bg-opacity))
 	}
 
 	.xxs\:px-2 {

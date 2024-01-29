@@ -23,7 +23,7 @@ export type AFetchResult = {
 }
 
 const useTokenInfo = ({ tokenSymbol }: TokenProps) => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   const aUrl = `${baseUrl}/ticks/byName/${tokenSymbol}`
   let { data: aData, error: aError } = useFetch<AFetchResult>(aUrl)
 

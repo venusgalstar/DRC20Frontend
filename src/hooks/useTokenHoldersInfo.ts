@@ -40,7 +40,7 @@ type HookReturn = {
 }
 
 const useTokenHoldersInfo = ({ tokenSymbol }: useTokenHoldersInfoProps): HookReturn => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   const url = `${baseUrl}/trading/tokenholderinfo/${tokenSymbol}?size=10000&page=0`
   const { data, error } = useFetch(url)
 

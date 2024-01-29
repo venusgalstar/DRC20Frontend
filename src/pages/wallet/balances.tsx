@@ -40,7 +40,7 @@ const Balances = () => {
         return
       }
       const url = `${
-        import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+        import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
       }/balances/${walletAddress}`
 
       try {
@@ -83,7 +83,8 @@ const Balances = () => {
   const stickyHeaderStyle = {
     position: 'sticky',
     top: 0,
-    backgroundColor: '#feffff',
+    backgroundColor: '#000',
+    color:'#fff',
     zIndex: 3,
   }
 
@@ -164,7 +165,8 @@ const Balances = () => {
                 {balanceInfoData?.map((balance: BalanceInfoData, _index: number) => (
                   <Tr
                     style={{
-                      background: '#feffff',
+                      background: '#000',
+                      color:'#fff',
                       borderBottom: '1px solid #f2f2f2',
                       fontSize: '16px',
                       lineHeight: '80px',

@@ -161,7 +161,8 @@ export const Table = ({
                       style={{
                         position: 'sticky',
                         top: 0,
-                        backgroundColor: '#feffff',
+                        backgroundColor: '#000',
+                        color:'#fff',
                         zIndex: 3,
                       }}
                     >
@@ -179,7 +180,8 @@ export const Table = ({
                     fontSize: '14px',
                     lineHeight: width < 768 ? '60px' : `${rowHeight}px`,
                     borderBottom: '2px solid #f5f5f5',
-                    backgroundColor: '#feffff',
+                    backgroundColor: '#000',
+                    color:'#fff',
                   }}
                 >
                   {row.getVisibleCells().map((cell) => (

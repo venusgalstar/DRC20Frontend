@@ -51,7 +51,7 @@ const CollectionMintingCard: React.FC<CollectionMintingCardProps> = ({
   steps,
   isActive,
 }) => {
-  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+  const baseUrl = import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
   const currentDogePriceUrl = `${baseUrl}/ticks/currentDogePrice`
   const { data: currentDogePrice } = useFetch<number>(currentDogePriceUrl)
 
@@ -108,7 +108,7 @@ const CollectionMintingCard: React.FC<CollectionMintingCardProps> = ({
     // increment the doginal counter
     if (doginalName && activeStep === 0) {
       const url = `${
-        import.meta.env.VITE_API_ENDPOINT_URL || 'https://d20-api2.dogeord.io'
+        import.meta.env.VITE_API_ENDPOINT_URL || 'https://thedragontest.com/api'
       }/doginals/inscriptionrequest?name=${doginalName}&amount=${amount}&dogeAmount=${dogeAmount}&fundingAddress=${
         mintingConfig.fundingWalletAddress
       }&receiverAddress=${address}&txid=${fundingResult}`

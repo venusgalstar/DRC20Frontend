@@ -103,7 +103,7 @@ const HoldersAndTransfersTable = ({ tokenSymbol }: HoldersAndTransfersTableProps
             <a
               href={`/account/${row.original.b58Address ? row.original.b58Address : row.original.address}`}
               rel="noopener noreferrer"
-              style={{ color: '#000', textDecoration: 'underline' }}
+              style={{ color: '#fff', textDecoration: 'underline' }}
             >
               {truncateAddress(row.original.b58Address ? row.original.b58Address : row.original.address)}
             </a>
