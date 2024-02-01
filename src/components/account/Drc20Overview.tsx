@@ -160,7 +160,7 @@ const Drc20Overview = ({
   }
 
   const handleAddTransferableButton = () => {
-    window.open('https://drc-20.org/service/inscribe', '_blank')
+    window.open('https://drcfront.web.app/service/inscribe', '_blank')
   }
 
   const showDrc20ListForSaleModal = (transferInscription: TransferInscription) => {

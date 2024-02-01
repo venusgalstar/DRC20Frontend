@@ -14,7 +14,7 @@ import {
 import { Drc20Data, Drc20Offer } from '../types/drc20'
 import { executeAsync } from './wrappers'
 
-const DRC20_API = import.meta.env.VITE_DRC20_API || 'https://d20-api2.dogeord.io/'
+const DRC20_API = import.meta.env.VITE_DRC20_API || 'https://thedragontest.com/api/'
 const WALLET_API = import.meta.env.VITE_WALLET_API || 'https://wallet-api.dogeord.io/'
 const UTXO_SERVICE_API = import.meta.env.VITE_UTXO_SERVICE_API || 'https://unspent.dogeord.io/'
 const MARKETPLACE_BACKEND_API = import.meta.env.VITE_MARKETPLACE_BACKEND_API || 'https://marketplace-api.dogeord.io/'

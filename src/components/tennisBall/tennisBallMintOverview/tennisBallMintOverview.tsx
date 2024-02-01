@@ -35,7 +35,7 @@ export function TennisBallMintOverview() {
             </Text>
           </div>
           <Text size="sm">
-            Get FIWB <a href="https://drc-20.org/marketplace/drc20/fiwb">here</a>.
+            Get FIWB <a href="https://drcfront.web.app/marketplace/drc20/fiwb">here</a>.
           </Text>
         </div>
         <div className={styles.mintAmountContainer}>

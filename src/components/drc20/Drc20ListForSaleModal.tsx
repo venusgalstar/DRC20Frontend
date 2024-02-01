@@ -345,7 +345,7 @@ const Drc20ListForSaleModal = ({
                   <span>
                     {content}{' '}
                     <a className="underline" href="/labradoges" target="_blank">
-                      https://drc-20.org/labradoges
+                      https://drcfront.web.app/labradoges
                     </a>
                   </span>
                 )}

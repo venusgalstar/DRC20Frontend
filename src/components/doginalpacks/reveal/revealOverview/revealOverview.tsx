@@ -58,7 +58,7 @@ export function RevealOverview() {
             </div>
             <Text size="sm">
               Get packs{' '}
-              <a rel="noreferrer noopener" target="_blank" href="https://drc-20.org/labradoges">
+              <a rel="noreferrer noopener" target="_blank" href="https://drcfront.web.app/labradoges">
                 here
               </a>
               .

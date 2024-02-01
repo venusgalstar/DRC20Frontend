@@ -12,7 +12,7 @@ const Terms = () => {
         {/* Introduction */}
         <p className="my-2">
           We urge you to carefully read our Terms of Service ("Terms"), as they dictate your interaction with the Doge
-          Labs website and interface at <a href="https://drc-20.org/">https://drc-20.org/</a> ("Site" or "Doge Labs
+          Labs website and interface at <a href="https://drcfront.web.app/">https://drcfront.web.app/</a> ("Site" or "Doge Labs
           Platform"). Our platform allows interaction with certain decentralized cryptographic protocols (which we
           neither own nor control) ("Protocols") to facilitate the creation and distribution ("minting") of Doginals
           including drc-20 token ("Doginals") and supports the sale and distribution of these Doginals on decentralized
