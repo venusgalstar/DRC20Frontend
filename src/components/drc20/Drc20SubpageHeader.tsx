@@ -72,7 +72,7 @@ const Drc20SubpageHeader = ({ tick }: Drc20SubpageProps) => {
           alt="Drc20"
           onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => (e.currentTarget.src = '/ticks/noicon.png')}
         />
-        <div className="xxs:hidden lg:flex lg:min-w-lg">
+        <div className="xxs:hidden lg:flex lg:min-w-lg" style={{color:'#000'}}>
           <Drc20SubpageInfo
             tick={tick}
             floorPrice={floorPrice}

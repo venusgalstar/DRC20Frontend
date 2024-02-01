@@ -171,7 +171,7 @@ const ActivityTable = ({ tick, searchValue, dogecoinPriceInUsd, activityType, ha
           <thead className="border-b-2 border-account-page-default w-full">
             <tr className="text-xs">
               <th
-                className="font-normal py-5 text-left sticky left-0 table-cell-shadow-right bg-[#ffffff]"
+                className="font-normal py-5 text-left sticky left-0 table-cell-shadow-right bg-[#000]"
                 onClick={() => handleHeaderClick(Columns.Inscription)}
               >
                 <button className="focus:outline-none">
@@ -219,7 +219,7 @@ const ActivityTable = ({ tick, searchValue, dogecoinPriceInUsd, activityType, ha
                 // )
                 .map((activity: Activity, index) => (
                   <tr key={index} className="text-xxs">
-                    <td className="py-5 text-left sticky left-0 bg-[#ffffff] table-cell-shadow-right">
+                    <td className="py-5 text-left sticky left-0 bg-[#000] table-cell-shadow-right" style={{color:'#fff'}}>
                       <a
                         href={`https://wonky-ord.dogeord.io/shibescription/${activity.inscriptionId}`}
                         target="_blank"

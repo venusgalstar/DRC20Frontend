@@ -58,7 +58,7 @@ const DoginalsCollectionInfo = ({ doginalsCollectionInfo, supply }: DoginalsColl
     <div>
       {doginalsCollectionInfo && (
         <div className="flex flex-wrap md:w-[600px] w-[292px] max-w-2xl gap-1 -ml-1">
-          <h1 className="text-4xl font-semibold w-full flex pb-4 items-center gap-1">
+          <h1 className="text-4xl font-semibold w-full flex pb-4 items-center gap-1" style={{color:'#000'}}>
             <span>{doginalsCollectionInfo.name}</span>
           </h1>
           <div className="flex justify-between w-36 bg-account-page-default rounded-md p-2 text-xxs">

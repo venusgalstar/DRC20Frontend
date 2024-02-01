@@ -35,7 +35,7 @@ const TypeFilter = ({
       <button
         className={`py-2 xxs:px-2 md:px-6 xxs:text-xxs xs:text-sm ${
           activeButton === ActiveButtonIndex.SECOND ? 'border-b-2 border-selected-color' : 'border-b-2 border-[#EFF2F5]'
-        } ${secondButtonDisabled ? 'text-black/50' : 'text-black'}`}
+        } ${secondButtonDisabled ? 'text-black/50' : 'text-black'}`} style={{color:'#fff'}}
         onClick={() => handleClick(ActiveButtonIndex.SECOND)}
         disabled={secondButtonDisabled}
       >

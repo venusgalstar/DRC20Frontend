@@ -30,7 +30,7 @@ const Drc20SubpageInfo = ({ tick, floorPrice, volume, holders, sales, dailyVolum
   return (
     <div>
       <div className="flex flex-wrap max-w-lg gap-1">
-        <h1 className="text-4xl font-semibold w-full flex pb-4 items-center gap-1">
+        <h1 className="text-4xl font-semibold w-full flex pb-4 items-center gap-1" style={{color:'#000'}}>
           <span className="hover:cursor-pointer" onClick={() => navigate(`/drc20/${tick}`)}>
             {tick}
           </span>

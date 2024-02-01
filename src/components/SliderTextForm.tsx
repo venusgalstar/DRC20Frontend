@@ -51,6 +51,7 @@ const SliderTextForm = ({
           width: '100%',
           margin: '24px 0 auto',
           padding: '8px 16px',
+          color: '#000',
         }}
         value={text}
         onChange={(e) => {

@@ -187,7 +187,7 @@ import {
             <thead className="border-b-2 border-account-page-default w-full">
               <tr className="text-xs">
                 <th
-                  className="font-normal py-5 text-left sticky left-0 table-cell-shadow-right bg-[#ffffff]"
+                  className="font-normal py-5 text-left sticky left-0 table-cell-shadow-right bg-[#000]"
                   onClick={() => handleHeaderClick(Columns.Inscription)}
                 >
                   <button className="focus:outline-none">
@@ -225,7 +225,7 @@ import {
                   // )
                   .map((activity: Activity, index) => (
                     <tr key={index} className="text-xxs">
-                      <td className="py-5 text-left sticky left-0 bg-[#ffffff] table-cell-shadow-right">
+                      <td className="py-5 text-left sticky left-0 bg-[#000] table-cell-shadow-right" style={{color:'#fff'}}>
                         <div
                           className="flex justify-start items-center cursor-pointer"
                           onClick={() =>

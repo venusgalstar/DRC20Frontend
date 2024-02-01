@@ -40,6 +40,7 @@ const SortByPrice = ({ selectedSortType, setSelectedSortType }: SortByProps) => 
           <button
             type="button"
             className="inline-flex justify-center w-full text-sm font-normal text-gray-700"
+            style={{color:'#fff'}}
             onClick={toggleDropdown}
           >
             {selectedSortType}

@@ -17,7 +17,7 @@ const DoginalsCollectionHeader = ({ doginalsCollectionInfo, supply }: DoginalsCo
     <div className="w-full flex flex-col gap-8 border-2 border-account-page-background rounded-lg bg-account-info-background px-3 py-8 md:px-6 lg:px-10 lg:py-14">
       <div className="w-full flex xxs:justify-between lg:justify-start lg:gap-8">
         <img className="w-28 h-28 rounded-full" src={doginalsCollectionInfo.imageURI} />
-        <div className="xxs:hidden lg:flex lg:min-w-lg">
+        <div className="xxs:hidden lg:flex lg:min-w-lg" style={{color:'#000'}}>
           <DoginalsCollectionInfo doginalsCollectionInfo={doginalsCollectionInfo} supply={supply} />
         </div>
         <div className="flex flex-row flex-start text-xl">

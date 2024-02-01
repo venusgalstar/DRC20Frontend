@@ -108,7 +108,7 @@ const Drc20Cards = ({
                       />
                       <span>{tick}</span>
                     </span>
-                    <span className="bg-account-page-default rounded-lg p-1">
+                    <span className="bg-account-page-default rounded-lg p-1" style={{color:'#000'}}>
                       <a
                         href={`https://wonky-ord.dogeord.io/shibescription/${drc20Card.inscriptionId}`}
                         target="_blank"
@@ -134,7 +134,7 @@ const Drc20Cards = ({
                   </div>
                 </div>
                 <div className="w-full flex flex-col gap-3">
-                  <div className="flex justify-between items-center w-full bg-account-page-default rounded-md p-2 xxs:text-xxxs sm:text-xxs">
+                  <div className="flex justify-between items-center w-full bg-account-page-default rounded-md p-2 xxs:text-xxxs sm:text-xxs" style={{color:'#000'}}>
                     <span className="font-medium">PRICE:</span>
                     <span>
                       {Number(drc20Card.price) / ONE_DOGE_IN_SHIBES < 0.00001
@@ -155,7 +155,7 @@ const Drc20Cards = ({
                           )}`}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center w-full bg-account-page-default rounded-md p-2 xxs:text-xxxs sm:text-xxs">
+                  <div className="flex justify-between items-center w-full bg-account-page-default rounded-md p-2 xxs:text-xxxs sm:text-xxs" style={{color:'#000'}}>
                     <span className="font-medium">TOTAL:</span>
                     <span className="">
                       {(Number(drc20Card.total) / ONE_DOGE_IN_SHIBES).toLocaleString('en-US', {
