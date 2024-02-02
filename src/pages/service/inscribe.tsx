@@ -480,22 +480,31 @@ const Inscribe = () => {
 
   return (
     <PageBase>
-      <div className="flex-col-center">
-        <div style={{ minWidth: '420px', maxWidth: '420px' }}>
-          <Segmented
-            options={types}
-            defaultValue={types[0]}
-            onChange={(x) => {
-              reset()
-              // @ts-ignore
-              slider && slider.current && slider.current.slickGoTo(0)
-              setInscriptionType(x as InscriptionType)
-            }}
-            size="large"
-            style={{ marginBottom: '24px' }}
-            block
-          />
-        </div>
+      <div className="flex-col-center" style={{backgroundColor:'transparent', width:'100%'}}>
+        <table style={{marginBottom: '24px', backgroundColor:'transparent', width:'100%'}}>
+          <tr>
+            <td style={{backgroundColor:'transparent', verticalAlign:'top', width:'100%'}}>
+              <span style={{fontSize:'40px', paddingBottom: '24px'}}>{'Inscribe >'}</span>
+            </td>
+            <td style={{backgroundColor:'transparent'}}>
+              <div style={{ minWidth: '420px', maxWidth: '420px' }}>
+                <Segmented
+                  options={types}
+                  defaultValue={types[0]}
+                  onChange={(x) => {
+                    reset()
+                    // @ts-ignore
+                    slider && slider.current && slider.current.slickGoTo(0)
+                    setInscriptionType(x as InscriptionType)
+                  }}
+                  size="large"
+                  style={{ border:'1px solid white', borderRadius:'0' }}
+                  block
+                />
+              </div>
+            </td>
+          </tr>
+        </table>
 
         <ServiceContentContainer header={SlideHeaderManager()} minHeight="540px">
           <Slider ref={slider} {...sliderSettings}>
@@ -573,7 +582,7 @@ const Inscribe = () => {
                   }}
                   style={{
                     background: '#722bf5',
-                    borderRadius: '16px',
+                    borderRadius: '0px',
                     color: 'white',
                     fontWeight: 'bold',
                     width: '50%',
@@ -627,7 +636,7 @@ const Inscribe = () => {
                   display: 'inline-block',
                   background: '#feb628',
                   border: 'none',
-                  borderRadius: '16px',
+                  borderRadius: '0px',
                   color: 'white',
                   fontWeight: 'bold',
                   fontSize: '18px',
@@ -647,7 +656,7 @@ const Inscribe = () => {
                 position: 'absolute',
                 border: '1px solid #f5f5f5',
                 color: '#fff',
-                borderRadius: '16px',
+                borderRadius: '0px',
                 fontWeight: 'bold',
                 height: '40px',
                 marginTop: '0px',

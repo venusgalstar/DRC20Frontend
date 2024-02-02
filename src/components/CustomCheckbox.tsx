@@ -21,7 +21,7 @@ const CustomCheckbox = ({ onChange, label, checked = false, explanationPopover }
           color: '#fff',
           '&.Mui-checked': {
             color: '#fff',
-            borderRadius: '15px',
+            borderRadius: '0px',
           },
         }}
       />

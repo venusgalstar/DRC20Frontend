@@ -71,7 +71,7 @@ const InscriptionNetworkFeeSlide = ({
         alignItems: 'flex-start',
         flex: '1',
         border: `2px solid ${isActive ? '#FFB627' : '#f5f5f5'}`,
-        borderRadius: '16px',
+        borderRadius: '0px',
         padding: '12px',
         ...style,
       }}
@@ -144,7 +144,7 @@ const InscriptionNetworkFeeSlide = ({
               gridTemplateColumns: '2fr 1fr 1fr 1fr',
               gap: '10px 5px',
               border: '2px solid #f5f5f5',
-              borderRadius: '16px',
+              borderRadius: '0px',
               margin: '12px 0',
               padding: '12px 6px',
             }}

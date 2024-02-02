@@ -14,7 +14,7 @@ const SliderButton = ({
   style = {
     background: '#000',
     border: '1px solid',
-    borderRadius: '1px',
+    borderRadius: '0px',
     color: 'white',
     fontWeight: 'bold',
     height: '40px',

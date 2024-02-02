@@ -53,7 +53,7 @@ const SliderFileUploadForm = ({
           height: '100%',
           padding: '16px',
           border: '3px dashed #F5F5F5',
-          borderRadius: '15px',
+          borderRadius: '0px',
 
           display: 'flex',
           justifyContent: 'center',
@@ -82,7 +82,7 @@ const SliderFileUploadForm = ({
               width: 'fit-content',
               height: 'fit-content',
               backgroundColor: '#EFF2F5',
-              borderRadius: '5px',
+              borderRadius: '0px',
               border: 'none',
               margin: '6px',
               padding: '6px',

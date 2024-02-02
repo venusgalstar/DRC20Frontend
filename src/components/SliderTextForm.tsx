@@ -45,7 +45,7 @@ const SliderTextForm = ({
         style={{
           resize: 'none',
           border: '2px solid #f5f5f5',
-          borderRadius: '6px',
+          borderRadius: '0px',
           outline: 'none',
           maxWidth: '480px',
           width: '100%',

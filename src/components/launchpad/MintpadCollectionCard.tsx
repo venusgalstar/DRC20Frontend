@@ -157,7 +157,7 @@ const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
               alt={altText}
               height="160"
               width="160"
-              style={{ borderRadius: '10px' }}
+              style={{ borderRadius: '0px' }}
             />
             <div className="flex-col flex items-start">
               <div className="flex flex-row justify-between items-center">
@@ -218,7 +218,7 @@ const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
                     style={{
                       background: '#ccc',
                       border: 'none',
-                      borderRadius: '16px',
+                      borderRadius: '0px',
                       color: 'white',
                       fontSize: '18px',
                       fontWeight: 'bold',
@@ -239,7 +239,7 @@ const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
                     style={{
                       background: mintDisabled ? '#ccc' : highlightColor,
                       border: 'none',
-                      borderRadius: '16px',
+                      borderRadius: '0px',
                       color: 'white',
                       fontSize: '18px',
                       fontWeight: 'bold',
@@ -265,7 +265,7 @@ const MintpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
                     style={{
                       background: '#ccc',
                       border: 'none',
-                      borderRadius: '16px',
+                      borderRadius: '0px',
                       color: 'white',
                       fontSize: '18px',
                       fontWeight: 'bold',

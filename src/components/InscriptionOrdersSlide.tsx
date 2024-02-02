@@ -89,7 +89,7 @@ const InscriptionOrdersSlide = ({
         <div
           style={{
             border: '2px solid #f5f5f5',
-            borderRadius: '15px',
+            borderRadius: '0px',
             maxWidth: '480px',
             width: '100%',
             margin: '24px auto',
@@ -104,7 +104,7 @@ const InscriptionOrdersSlide = ({
               style={{
                 width: '100%',
                 backgroundColor: '#EFF2F5',
-                borderRadius: '5px',
+                borderRadius: '0px',
                 border: 'none',
                 marginBlockEnd: '8px',
                 padding: '6px 12px',

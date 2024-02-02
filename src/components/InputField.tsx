@@ -36,7 +36,7 @@ const InputField = ({
       style={{
         backgroundColor: '#ffffff',
         border: '2px solid #f5f5f5',
-        borderRadius: '16px',
+        borderRadius: '0px',
         margin: 'auto',
         marginBottom: '24px',
         marginTop: '24px',

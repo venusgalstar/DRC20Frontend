@@ -283,7 +283,7 @@ const Orders = () => {
             justifyContent: 'center',
             alignItems: 'center',
             border: '2px solid #F6F6F6',
-            borderRadius: '16px',
+            borderRadius: '0px',
             marginLeft: '24px',
           }}
         >

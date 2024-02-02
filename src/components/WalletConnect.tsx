@@ -17,10 +17,10 @@ interface WalletConnectInputProps {
 const WalletConnect: React.FC<WalletConnectInputProps> = ({
   disabled,
   accountPage = '/account',
-  bgColor = '#feb628',
+  bgColor = '#000',
   bgColorLoggedIn = 'transparent',
   hightlightColor = '#feb628',
-  textColor = '#000000',
+  textColor = '#fff',
   hideDoggy = false,
 }) => {
   const navigator = useNavigate()
@@ -37,8 +37,8 @@ const WalletConnect: React.FC<WalletConnectInputProps> = ({
             <Button
               style={{
                 background: bgColor,
-                border: 'none',
-                borderRadius: '16px',
+                border: '2px solid #fff',
+                borderRadius: '0px',
                 color: '#fff',
                 fontWeight: 'bold',
                 height: '40px',
@@ -64,7 +64,7 @@ const WalletConnect: React.FC<WalletConnectInputProps> = ({
               style={{
                 background: disabled ? '#ccc' : bgColor,
                 border: 'none',
-                borderRadius: '16px',
+                borderRadius: '0px',
                 color: '#fff',
                 fontWeight: 'bold',
                 height: '40px',
@@ -97,7 +97,7 @@ const WalletConnect: React.FC<WalletConnectInputProps> = ({
             <div
               className="flex items-center justify-between px-2 md:px-2 py-0 md:gap-x-0 gap-x-1 border-2 border-account-page-default xxs:text-xxs md:text-xs leading-4 rounded-base cursor-pointer"
               onClick={navigateToAccountPage}
-              style={{ backgroundColor: bgColorLoggedIn }}
+              style={{ backgroundColor: bgColorLoggedIn, borderRadius:'0px' }}
             >
               <div className="text-amber-500 text-lg" style={{ color: hightlightColor }}>
                 <BiWallet />

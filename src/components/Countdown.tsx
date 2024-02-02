@@ -18,7 +18,7 @@ const CountdownItem = ({ value, style }: { value: any; style: any }) => (
       color: '#FFF',
       margin: '4px',
       padding: '4px 0',
-      borderRadius: '5px',
+      borderRadius: '0px',
       height: '28px',
       width: '36px',
       textAlign: 'center',

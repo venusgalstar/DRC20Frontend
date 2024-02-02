@@ -30,7 +30,7 @@ export const TopCoinsByCategory = ({
       style={{
         backgroundColor: '#ffffff',
         boxShadow: 'rgba(88, 102, 126, 0.08) 0px 4px 24px, rgba(88, 102, 126, 0.12) 0px 1px 2px',
-        borderRadius: '12px',
+        borderRadius: '0px',
         height: '200px',
         padding: '1rem',
         marginBottom: '1rem',

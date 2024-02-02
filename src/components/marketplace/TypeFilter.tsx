@@ -19,17 +19,17 @@ const TypeFilter = ({
 
   return (
     <div className="flex w-full justify-center">
-      <button
+      <button style={{borderRadius:'0',borderColor:'#fff'}}
         className={`py-2 px-6 md:w-32 md:text-sm ${
-          displayedType === DisplayType.DOGINALS ? 'border-b-2 border-amber-500' : 'border-b-2 border-[#EFF2F5]'
+          displayedType === DisplayType.DOGINALS ? 'border-b-2 border-amber-500 border-[#FFFFFF] bg-black text-white' : 'border-b-2 bg-white text-black border-[#FFFFFF]'
         }`}
         onClick={onClickDoginals}
       >
         Doge NFT
       </button>
-      <button
+      <button style={{borderRadius:'0',borderColor:'#fff'}}
         className={`py-2 px-4 md:w-32 md:text-sm ${
-          displayedType === DisplayType.DRC20 ? 'border-b-2 border-amber-500' : 'border-b-2 border-[#EFF2F5]'
+          displayedType === DisplayType.DRC20 ? 'border-b-2 border-amber-500 border-[#FFFFFF] bg-black text-white' : 'border-b-2 bg-white text-black border-[#FFFFFF]'
         }`}
         onClick={onClickDrc20}
       >

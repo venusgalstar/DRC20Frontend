@@ -65,7 +65,7 @@ const Drc20TrendingTableRow = ({
             <span className="pr-4">{index}</span>
             <a onClick={() => handleClick(tick)} className="flex items-center gap-2">
               <img
-                className="w-7 object-cover rounded-2xl"
+                className="w-7" style={{backgroundColor:'#fff'}}
                 src={`https://drc-20-icons.s3.eu-central-1.amazonaws.com/${tick.toLowerCase()}.png`}
                 alt="Drc20"
                 onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) =>

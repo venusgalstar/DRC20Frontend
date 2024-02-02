@@ -155,7 +155,7 @@ const HoldersAndTransfersTable = ({ tokenSymbol }: HoldersAndTransfersTableProps
             <div
               style={{
                 backgroundColor: '#F6F6F6',
-                borderRadius: '5px',
+                borderRadius: '0px',
                 margin: '6px',
                 padding: '6px',
                 border: `1px solid ${color(status, true)}`,

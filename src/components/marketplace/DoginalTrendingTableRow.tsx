@@ -43,7 +43,7 @@ const DoginalTrendingTableRow = ({
             onClick={() => handleClick(symbol)}
             className="inline-flex items-center gap-2 py-5 text-left sticky table-cell-shadow-right left-5 bg-default-background cursor-pointer"
           >
-            <img src={imageURI} alt="logo" className="w-7 rounded-3xl"></img> {name}
+            <img src={imageURI} alt="logo" className="w-7" style={{backgroundColor:'#fff'}}></img> {name}
           </td>
           <td className="py-5 text-left">
             <div className="flex flex-col whitespace-nowrap">

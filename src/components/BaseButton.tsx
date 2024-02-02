@@ -16,7 +16,7 @@ const BaseButton = ({ onClick, children, style, disabled = false, buttonType = '
       style={{
         background: disabled ? '#ccc' : buttonType == 'primary' ? '#feb628' : '#fff',
         border: buttonType == 'primary' ? 'none' : '2px solid #f5f5f5',
-        borderRadius: '16px',
+        borderRadius: '0px',
         color: buttonType == 'primary' ? '#fff' : '#000',
         fontWeight: 'bold',
         height: '40px',

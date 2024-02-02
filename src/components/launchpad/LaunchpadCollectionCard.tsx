@@ -173,7 +173,7 @@ const LaunchpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
     >
       <Slider ref={slider} {...sliderSettings}>
         <div>
-          <img id={doginalName} src={imgSrc} alt={altText} height="360" width="360" style={{ borderRadius: '10px' }} />
+          <img id={doginalName} src={imgSrc} alt={altText} height="360" width="360" style={{ borderRadius: '0px' }} />
           <div className="mt-4 flex flex-row items-center">
             <div className="flex-col flex items-start">
               <div className="flex justify-between w-32 bg-account-page-default rounded-md p-2 text-xs">
@@ -284,7 +284,7 @@ const LaunchpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
                 style={{
                   background: '#ccc',
                   border: 'none',
-                  borderRadius: '16px',
+                  borderRadius: '0px',
                   color: 'white',
                   fontSize: '18px',
                   fontWeight: 'bold',
@@ -305,7 +305,7 @@ const LaunchpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
                 style={{
                   background: mintDisabled ? '#ccc' : highlightColor,
                   border: 'none',
-                  borderRadius: '16px',
+                  borderRadius: '0px',
                   color: 'white',
                   fontSize: '18px',
                   fontWeight: 'bold',
@@ -331,7 +331,7 @@ const LaunchpadCollectionCard: React.FC<LaunchpadCollectionCardProps> = ({
                 style={{
                   background: '#ccc',
                   border: 'none',
-                  borderRadius: '16px',
+                  borderRadius: '0px',
                   color: 'white',
                   fontSize: '18px',
                   fontWeight: 'bold',

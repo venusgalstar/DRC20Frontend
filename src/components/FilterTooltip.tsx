@@ -17,7 +17,7 @@ const FilterTooltip = ({ activeItem, items, style, disabled = false, onClick }: 
       style={{
         color: '#feb628',
         border: '2px solid #F6F6F6',
-        borderRadius: '16px',
+        borderRadius: '0px',
         padding: '0.5rem',
         margin: '0 0 0 1rem',
         ...style,

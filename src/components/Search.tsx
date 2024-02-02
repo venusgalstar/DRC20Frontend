@@ -29,6 +29,7 @@ function Search({ displayedType, searchValue, setSearchValue, handleSearchClick 
       <div className="flex flex-row items-center">
         <input
           className="my-1 mx-2 outline-none border-none text-sm xxs:w-20 xs:w-24 md:w-48"
+          style={{borderRadius:'0px'}}
           type="text"
           value={searchValue}
           onChange={handleSearchValueChange}

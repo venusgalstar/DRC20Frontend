@@ -16,7 +16,7 @@ const Disclaimer: React.FC<DisclaimerProps> = ({ acceptDisclaimer, highlightColo
           color: '#000000',
           backgroundColor: '#ffffff',
           boxShadow: 'rgba(88, 102, 126, 0.08) 0px 4px 24px, rgba(88, 102, 126, 0.12) 0px 1px 2px',
-          borderRadius: '12px',
+          borderRadius: '0px',
           minHeight: '290px',
           padding: '2rem',
           margin: '4rem auto',
@@ -38,7 +38,7 @@ const Disclaimer: React.FC<DisclaimerProps> = ({ acceptDisclaimer, highlightColo
               style={{
                 background: highlightColor,
                 border: 'none',
-                borderRadius: '16px',
+                borderRadius: '0px',
                 color: '#fff',
                 fontWeight: 'bold',
                 height: '40px',

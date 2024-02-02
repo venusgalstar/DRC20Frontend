@@ -245,9 +245,9 @@ const Balances = () => {
             disabled={searchButtonDisabled}
             onClick={handleSearch}
             style={{
-              background: '#feb628',
+              background: '#000',
               border: 'none',
-              borderRadius: '16px',
+              borderRadius: '0px',
               color: 'white',
               fontWeight: 'bold',
               height: '48px',

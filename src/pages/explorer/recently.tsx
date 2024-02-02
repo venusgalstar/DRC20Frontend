@@ -50,7 +50,7 @@ const Recently = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             boxShadow: 'rgba(88, 102, 126, 0.08) 0px 4px 24px, rgba(88, 102, 126, 0.12) 0px 1px 2px',
-            borderRadius: '12px',
+            borderRadius: '0px',
             height: '200px',
             marginBottom: '1rem',
             position: 'relative',

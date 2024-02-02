@@ -23,6 +23,7 @@ const RefreshButton = ({
   return (
     <button
       className="xxs:hidden xs:flex border-2 border-[#EFF2F5] rounded-lg text-amber-500 text-xl p-1 hover:text-amber-700"
+      style={{borderRadius:'0px'}}
       disabled={isRefreshing}
       onClick={isRefreshing ? noop : handleRefreshClick}
     >

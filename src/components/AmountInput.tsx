@@ -20,7 +20,7 @@ const AmountInput: React.FC<AmountInputProps> = ({
       style={{
         backgroundColor: '#ffffff',
         border: '2px solid #f5f5f5',
-        borderRadius: '10px',
+        borderRadius: '0px',
         margin: 'auto',
         paddingTop: '3px',
         paddingBottom: '3px',

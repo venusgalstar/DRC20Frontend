@@ -226,7 +226,7 @@ const CollectionMintingCard: React.FC<CollectionMintingCardProps> = ({
                   style={{
                     background: !connected || !address || !amount || !enoughFunds || !isActive ? '#ccc' : '#feb628',
                     border: 'none',
-                    borderRadius: '16px',
+                    borderRadius: '0px',
                     color: 'white',
                     fontWeight: 'bold',
                     height: '40px',
@@ -344,7 +344,7 @@ const CollectionMintingCard: React.FC<CollectionMintingCardProps> = ({
               style={{
                 background: '#ccc',
                 border: 'none',
-                borderRadius: '16px',
+                borderRadius: '0px',
                 color: 'white',
                 fontWeight: 'bold',
                 height: '40px',

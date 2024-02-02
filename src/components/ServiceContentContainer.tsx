@@ -36,7 +36,7 @@ const ServiceContentContainer = ({
         position: 'relative',
         backgroundColor: '#01ffe1',
         border: '2px solid #f5f5f5',
-        borderRadius: '16px',
+        borderRadius: '0px',
         margin: 'auto',
         marginBottom: '84px',
         maxWidth: maxWidth,

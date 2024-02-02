@@ -7951,7 +7951,7 @@ a:hover {
 }
 
 ._button_4c9wt_1 {
-	border-radius: 16px;
+	border-radius: 0px;
 	background-color: var(--yellow);
 	display: flex;
 	justify-content: center;
@@ -8511,7 +8511,7 @@ a:hover {
 	padding: 16px;
 	border: 2px solid var(--light-grey);
 	background-color: var(--white);
-	border-radius: 16px;
+	border-radius: 0px;
 	max-width: 240px
 }
 
@@ -10343,7 +10343,7 @@ a:hover {
 	padding: 16px;
 	gap: 16px;
 	border: 2px solid var(--light-grey);
-	border-radius: 16px;
+	border-radius: 0px;
 	width: 100%;
 	justify-content: center
 }
@@ -12587,18 +12587,15 @@ textarea.ant-input-number {
 .ant-segmented {
 	box-sizing: border-box;
 	margin: 0;
-	color: #000000d9;
 	font-size: 14px;
 	font-variant: tabular-nums;
 	line-height: 1.5715;
 	list-style: none;
 	font-feature-settings: "tnum";
 	display: inline-block;
-	padding: 2px;
-	color: #000000a6;
-	background-color: #0000000a;
-	border-radius: 8px;
-	transition: all .3s cubic-bezier(.645, .045, .355, 1)
+	padding: 0px;
+	border-radius: 0px;
+	/*transition: all .3s cubic-bezier(.645, .045, .355, 1)*/
 }
 
 .ant-segmented-group {
@@ -12606,7 +12603,8 @@ textarea.ant-input-number {
 	display: flex;
 	align-items: stretch;
 	justify-items: flex-start;
-	width: 100%
+	width: 100%;
+	border-radius: 0px;
 }
 
 .ant-segmented.ant-segmented-block {
@@ -12627,14 +12625,21 @@ textarea.ant-input-number {
 	position: relative;
 	text-align: center;
 	cursor: pointer;
-	transition: color .3s cubic-bezier(.645, .045, .355, 1)
+	border-radius: 0px;
+	background-color: #fff;
+	color: #000;
 }
 
-.ant-segmented-item-selected {
-	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px -2px #0000000d, 0 1px 4px -1px #00000012, 0 0 1px #00000014;
-	color: #262626
+.ant-segmented .ant-segmented-item-selected {
+	background-color: #000;
+	color: #fff;
+	border-radius: 0px;
+}
+
+.ant-segmented .ant-segmented-item-selected:hover {
+	background-color: #000;
+	color: #fff;
+	border-radius: 0px;
 }
 
 .ant-segmented-item:hover,
@@ -12647,9 +12652,11 @@ textarea.ant-input-number {
 	padding: 0 11px;
 	line-height: 28px;
 	overflow: hidden;
-	white-space: nowrap;
 	text-overflow: ellipsis;
-	word-break: keep-all
+	word-break: keep-all;
+	border-radius: 0px;
+	color:inherit;
+	background-color:transparent;
 }
 
 .ant-segmented-item-icon+* {
@@ -12663,7 +12670,7 @@ textarea.ant-input-number {
 	width: 0;
 	height: 0;
 	opacity: 0;
-	pointer-events: none
+	pointer-events: none;
 }
 
 .ant-segmented.ant-segmented-lg .ant-segmented-item-label {
@@ -12686,11 +12693,16 @@ textarea.ant-input-number {
 	cursor: not-allowed
 }
 
+.ant-segmented.ant-segmented-lg .ant-segmented-item
+{
+	border-radius:0px;
+}
+
 .ant-segmented-thumb {
 	background-color: #fff;
-	border-radius: 8px;
 	box-shadow: 0 2px 8px -2px #0000000d, 0 1px 4px -1px #00000012, 0 0 1px #00000014;
 	position: absolute;
+	border-radius:0px;
 	top: 0;
 	left: 0;
 	width: 0;
@@ -14014,7 +14026,7 @@ textarea.ant-input-number {
 	max-width: 100%;
 	max-height: 100%;
 	background-color: var(--grey);
-	border-radius: 16px;
+	border-radius: 0x;
 	display: flex;
 	justify-content: center;
 	align-items: center
@@ -14036,7 +14048,7 @@ textarea.ant-input-number {
 	max-width: 100%;
 	max-height: 100%;
 	background-color: var(--grey);
-	border-radius: 16px;
+	border-radius: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center

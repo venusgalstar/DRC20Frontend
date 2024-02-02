@@ -13,7 +13,7 @@ const InfoContainer = ({ head, body }: InfoContainerProps) => {
         maxWidth: '1280px',
         backgroundColor: '#fff',
         border: '2px solid #f5f5f5',
-        borderRadius: '16px',
+        borderRadius: '0px',
         padding: '24px',
       }}
     >
