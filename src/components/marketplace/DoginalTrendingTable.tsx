@@ -89,7 +89,7 @@ const DoginalTrendingTable = ({
           )
         } else {
           return (
-            <table className="w-full min-w-[1000px]">
+            <table className="w-full min-w-[1000px]" style={{backgroundColor:'#00000000'}}>
               <thead className="border-b-2 border-[#EFF2F5] w-full">
                 <tr>
                   <th colSpan={1} className="font-normal py-5 text-left sticky left-0 bg-default-background">

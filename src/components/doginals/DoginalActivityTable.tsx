@@ -183,7 +183,7 @@ import {
     return (
       <div>
         <div className="w-full overflow-x-auto overflow-y-hidden">
-          <table className="w-full min-w-[1000px] table-fixed">
+          <table className="w-full min-w-[1000px] table-fixed" style={{backgroundColor:'#00000000'}}>
             <thead className="border-b-2 border-account-page-default w-full">
               <tr className="text-xs">
                 <th

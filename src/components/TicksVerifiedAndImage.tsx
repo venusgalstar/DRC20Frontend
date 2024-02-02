@@ -55,7 +55,7 @@ export default function TicksVerifiedAndImage({
   const combinedStyleTrustLevel = {
     height: '16px',
     width: '16px',
-    borderRadius: '100%',
+    borderRadius: '0px',
     alignSelf: 'center',
     marginLeft: '5px',
     backgroundSize: 'cover',
@@ -65,7 +65,7 @@ export default function TicksVerifiedAndImage({
   const combinedStyleTickImage = {
     height: `${height || '24px'}`,
     width: `${width || '24px'}`,
-    borderRadius: '100%',
+    borderRadius: '0px',
     alignSelf: 'center',
     marginRight: '8px',
     backgroundSize: 'cover',

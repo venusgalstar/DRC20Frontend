@@ -87,7 +87,7 @@ const Drc20TrendingTable = ({
             )
           } else {
             return (
-              <table className="w-full min-w-[1000px]">
+              <table className="w-full min-w-[1000px]" style={{backgroundColor:'#00000000'}}>
                 <thead className="border-b-2 border-[#EFF2F5] w-full xxs:[&>tr>*:nth-child(1)]:w-[10%] xs:[&>tr>*:nth-child(1)]:w-[12%] [&>tr>*:nth-child(2)]:w-[16%] [&>tr>*:nth-child(3)]:w-[18%] [&>tr>*:nth-child(4)]:w-[13%] [&>tr>*:nth-child(5)]:w-[12%] [&>tr>*:nth-child(6)]:w-[12%]">
                   <tr>
                     <th

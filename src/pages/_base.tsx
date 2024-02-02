@@ -149,7 +149,7 @@ const PageBase = ({ children }: { children: any }) => {
       >
         <Stats />
       </div>
-      
+
       <table style={{border:"0px", position:"absolute", top:"50px", width:"100%"}}>
         <tbody>
           <tr>
@@ -234,12 +234,16 @@ const PageBase = ({ children }: { children: any }) => {
                 className=""
                 style={{
                   borderTop: '1px solid #eff2f5',
-                  padding: '0 16px',
+                  padding: '0',
                   textAlign: 'center',
-                  background: 'linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px)',
+                  background: '#000' //'linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px)',
                 }}
               >
                 {/*100vh - 414px for footer and header*/}
+
+                <div style={{position:'absolute', width:'300px', height:'300px', top:'300px', left:'80%', borderRadius:'100%', filter:'blur(128px)', background:'#0E9F8E'}}></div>
+                <div style={{position:'absolute', width:'400px', height:'400px', top:'50%', left:'-200px', borderRadius:'100%', filter:'blur(128px)', background:'#0E9F8E'}}></div>
+
                 <div
                   className="App relative p-4 min-h-[calc(100vh-414px)]"
                   style={{

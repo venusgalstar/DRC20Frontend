@@ -6020,7 +6020,8 @@ video {
 }
 
 .bg-default-background {
-	background-color: linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px)
+	background-color: #000
+	/*linear-gradient(rgb(248, 250, 253) 0%, rgba(248, 250, 253, 0) 413px)*/
 }
 
 .bg-gray-100 {
