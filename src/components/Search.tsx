@@ -34,6 +34,7 @@ function Search({ displayedType, searchValue, setSearchValue, handleSearchClick 
           onChange={handleSearchValueChange}
           onKeyDown={handleKeyPress}
           placeholder="Search..."
+          style = {{color:'#000'}}
         />
         <div className="absolute right-0 flex items-center pr-2 cursor-pointer" onClick={handleSearchClick}>
           <img src="/images/search.svg" alt="search" width={20} height={20} />
