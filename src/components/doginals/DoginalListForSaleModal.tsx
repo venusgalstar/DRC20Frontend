@@ -158,7 +158,7 @@ const DoginalListForSaleModal = ({
 
   return (
     <div className={modalContainerStyle}>
-      <div className="flex flex-col px-3 bg-account-info-background rounded-lg border-2 border-account-page-default">
+      <div className="flex flex-col px-3 bg-account-info-background rounded-lg border-2 border-account-page-default" style={{color:'#000'}}>
         <div className="flex justify-between items-center my-3">
           <span className="text-sm font-bold">QUICK LIST</span>
           <button onClick={closeDoginalListForSaleModal}>
@@ -202,7 +202,7 @@ const DoginalListForSaleModal = ({
                 delayHide={100}
               />
             </div>
-            <div className="flex flex-row items-center">
+            <div className="flex flex-row items-center" style={{color:'#000'}}>
               <input
                 ref={priceInputRef}
                 className="mx-2 my-0.5 outline-none border-none text-sm"

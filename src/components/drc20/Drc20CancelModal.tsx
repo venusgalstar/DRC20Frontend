@@ -66,7 +66,7 @@ const Drc20CancelModal = ({ visible, setVisible, transferInscription, address }:
   return (
     <div className={modalContainerStyle}>
       <CustomToastContainer />
-      <div className="flex flex-col px-3 bg-account-info-background rounded-lg border-2 border-account-page-default my-1">
+      <div className="flex flex-col px-3 bg-account-info-background rounded-lg border-2 border-account-page-default my-1" style={{color:'#000'}}>
         <div className="flex justify-between items-center my-3">
           <span className="text-sm font-bold">CANCEL LISTING</span>
           <button onClick={closeDrc20CancelModal}>
