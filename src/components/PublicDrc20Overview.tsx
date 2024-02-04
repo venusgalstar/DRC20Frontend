@@ -153,16 +153,16 @@ const PublicDrc20Overview = ({
           <thead className="w-full border-solid border-b-2 border-account-page-default">
             {isBalanceTabSelected ? (
               <tr className="w-full">
-                <th className="font-normal sticky table-cell-shadow-right min-w-full bg-white z-10 md:static left-0 md:left-auto whitespace-nowrap py-4 text-xs pr-8 md:pr-56 text-left">
+                <th className="font-normal sticky table-cell-shadow-right min-w-full bg-white z-10 md:static left-0 md:left-auto whitespace-nowrap py-4 text-xs pr-8 md:pr-56 text-left" style={{backgroundColor:'#00000000',color:'#fff'}}>
                   Item
                 </th>
-                <th className="font-normal whitespace-nowrap xxs:pl-4 md:pl-0 pr-12 py-4 text-left text-xs text-light-dark">
+                <th className="font-normal whitespace-nowrap xxs:pl-4 md:pl-0 pr-12 py-4 text-left text-xs text-light-dark" style={{backgroundColor:'#00000000',color:'#fff'}}>
                   Available
                 </th>
-                <th className="font-normal whitespace-nowrap pr-12 py-4 text-left text-xs text-light-dark">
+                <th className="font-normal whitespace-nowrap pr-12 py-4 text-left text-xs text-light-dark" style={{backgroundColor:'#00000000',color:'#fff'}}>
                   Transferable
                 </th>
-                <th className="font-normal whitespace-nowrap pr-2 py-4 text-xs text-left">
+                <th className="font-normal whitespace-nowrap pr-2 py-4 text-xs text-left" style={{backgroundColor:'#00000000',color:'#fff'}}>
                   Pending{' '}
                   <Tooltip
                     title={

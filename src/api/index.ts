@@ -141,7 +141,7 @@ export const getImageInscriptions = async ({ address, cursor, size }: GetImageIn
 
 export const getDrc20Balance = async (address: string) => {
   const { data } = await axios.get(DRC20_API + 'balances/' + address)
-
+  console.log("asdfasdfasdf", data);
   return data.balanceData ? data.balanceData : []
 }
 
