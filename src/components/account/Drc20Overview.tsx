@@ -38,8 +38,8 @@ const Drc20Overview = ({
   dogecoinPriceInUsd,
   pendingD20Balances = {},
 }: Drc20OverviewProps) => {
-  const selectedColor = '#FFB627' // use the one from tailwind.config.js
-  const defaultColor = '#EFF2F5' // use the one from tailwind.config.js
+  const selectedColor = '#000' // use the one from tailwind.config.js
+  const defaultColor = '#fff' // use the one from tailwind.config.js
 
   const location = useLocation()
 
@@ -189,22 +189,26 @@ const Drc20Overview = ({
         address={address}
       />
       <div className="flex justify-between w-full border-b-2 border-account-page-default pb-4">
-        <div className="flex flex-row bg-account-page-background rounded-full">
+        <div className="flex flex-row bg-account-page-background" style={{border:'1px solid #fff'}}>
           <button
-            className="rounded-full px-8 py-1 xxs:text-xxxs leading-4 xs:text-xs"
+            className="px-8 py-1 xxs:text-xxxs leading-4 xs:text-xs"
             style={{
               backgroundColor: balanceButtonBgColor,
               color: balanceButtonTextColor,
+              border: '0px',
+              borderRadius: '0px'
             }}
             onClick={handleBalanceClick}
           >
             Balance
           </button>
           <button
-            className="rounded-full px-2 py-1 xxs:text-xxxs leading-4 xs:text-xs"
+            className="px-2 py-1 xxs:text-xxxs leading-4 xs:text-xs"
             style={{
               backgroundColor: transferInscriptionButtonBgColor,
               color: transferInscriptionButtonTextColor,
+              border: '0px',
+              borderRadius: '0px'
             }}
             onClick={handleTransferInscriptionClick}
           >
@@ -241,7 +245,7 @@ const Drc20Overview = ({
               </tr>
             ) : (
               <tr className="w-full">
-                <th className="font-normal sticky z-10 table-cell-shadow-right bg-white md:static left-0 md:left-auto whitespace-nowrap py-4 pr-8 md:pr-92 text-xs text-start">
+                <th className="font-normal sticky z-10 table-cell-shadow-right bg-white md:static left-0 md:left-auto whitespace-nowrap py-4 pr-8 md:pr-92 text-xs text-start" style={{backgroundColor:'#000', color:'#fff'}}>
                   Item
                 </th>
                 <th className="font-normal whitespace-nowrap xxs:pl-4 md:pl-0 pr-12 py-4 text-left text-xs">
@@ -258,9 +262,9 @@ const Drc20Overview = ({
                   .filter((drc20) => drc20.name.includes(searchValue))
                   .map((drc20) => (
                     <tr className="" key={drc20.name}>
-                      <td className="sticky table-cell-shadow-right z-10 bg-white md:static left-0 md:left-auto whitespace-nowrap md:pr-0 md:pl-0 pt-4 text-xs flex justify-start items-center">
+                      <td className="sticky table-cell-shadow-right z-10 bg-black md:static left-0 md:left-auto whitespace-nowrap md:pr-0 md:pl-0 pt-4 text-xs flex justify-start items-center" style={{color:'#fff'}}>
                         <img
-                          className="md:h-7 md:w-7 w-4 h-4 object-cover rounded-full cursor-pointer"
+                          className="md:h-7 md:w-7 w-4 h-4 object-cover rounded-full cursor-pointer" style={{backgroundColor:'#fff'}}
                           src={`https://drc-20-icons.s3.eu-central-1.amazonaws.com/${drc20.name.toLowerCase()}.png`}
                           alt="Drc20"
                           onError={(e) => (e.currentTarget.src = '/ticks/noIcon.svg')}
@@ -275,10 +279,10 @@ const Drc20Overview = ({
                         {drc20.verified === 2 && <img src={'/ticks/verify.png'} alt="verified" className="h-3 w-3" />}
                         {drc20.verified === 0 && <img src={'/ticks/caution.png'} alt="caution" className="h-3 w-3" />}
                       </td>
-                      <td className="pt-3 xxs:pl-4 md:pl-0 text-left text-xs text-light-dark align-middle">
+                      <td className="pt-3 xxs:pl-4 md:pl-0 text-left text-xs text-white align-middle" style={{color:'#fff'}}>
                         {drc20.available.toLocaleString()}
                       </td>
-                      <td className="pt-3 text-left text-xs text-light-dark">
+                      <td className="pt-3 text-left text-xs text-white">
                         <div className="flex items-center justify-start">
                           <span>{drc20.transferable}</span>
                           {drc20.available > 0 && (
@@ -318,7 +322,7 @@ const Drc20Overview = ({
                   )
                   .map((transferInscription) => (
                     <tr key={transferInscription.inscriptionNumber}>
-                      <td className="sticky z-10 table-cell-shadow-right md:static left-0 bg-white md:left-auto pt-4 text-xs flex justify-start items-center">
+                      <td className="sticky z-10 table-cell-shadow-right md:static left-0 bg-white md:left-auto pt-4 text-xs flex justify-start items-center" style={{backgroundColor:'#00000000', color:'#fff'}}>
                         <div className="inline-flex items-center">
                           <img
                             className="md:h-7 md:w-7 w-4 h-4 object-cover rounded-full"

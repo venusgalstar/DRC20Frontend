@@ -35,8 +35,8 @@ const PublicDrc20Overview = ({
   pendingD20Balances = {},
 }: PublicDrc20OverviewProps) => {
   const navigator = useNavigate()
-  const selectedColor = '#FFB627' // use the one from tailwind.config.js
-  const defaultColor = '#EFF2F5' // use the one from tailwind.config.js
+  const selectedColor = '#000' // use the one from tailwind.config.js
+  const defaultColor = '#fff' // use the one from tailwind.config.js
 
   const [isBalanceTabSelected, setIsBalanceTabSelected] = useState<boolean>(true)
   const [balanceButtonBgColor, setBalanceButtonBgColor] = useState<string>(selectedColor)
@@ -124,22 +124,26 @@ const PublicDrc20Overview = ({
   return (
     <>
       <div className="flex justify-between w-full border-b-2 border-account-page-default pb-4">
-        <div className="flex flex-row bg-account-page-background rounded-full">
+        <div className="flex flex-row bg-account-page-background" style={{border:'1px solid #fff'}}>
           <button
-            className="rounded-full px-8 py-1 xxs:text-xxxs leading-4 xs:text-xs"
+            className="px-8 py-1 xxs:text-xxxs leading-4 xs:text-xs"
             style={{
               backgroundColor: balanceButtonBgColor,
               color: balanceButtonTextColor,
+              border: '0px',
+              borderRadius: '0px'
             }}
             onClick={handleBalanceClick}
           >
             Balance
           </button>
           <button
-            className="rounded-full px-2 py-1 xxs:text-xxxs leading-4 xs:text-xs"
+            className="px-2 py-1 xxs:text-xxxs leading-4 xs:text-xs"
             style={{
               backgroundColor: transferInscriptionButtonBgColor,
               color: transferInscriptionButtonTextColor,
+              border: '0px',
+              borderRadius: '0px'
             }}
             onClick={handleTransferInscriptionClick}
           >
@@ -176,7 +180,7 @@ const PublicDrc20Overview = ({
               </tr>
             ) : (
               <tr className="w-full">
-                <th className="font-normal sticky z-10 table-cell-shadow-right bg-white md:static left-0 md:left-auto whitespace-nowrap py-4 pr-8 md:pr-92 text-xs text-start">
+                <th className="font-normal sticky z-10 table-cell-shadow-right bg-white md:static left-0 md:left-auto whitespace-nowrap py-4 pr-8 md:pr-92 text-xs text-start" style={{backgroundColor:'#000', color:'#fff'}}>
                   Item
                 </th>
                 <th className="font-normal whitespace-nowrap xxs:pl-4 md:pl-0 pr-12 py-4 text-left text-xs">
@@ -193,7 +197,8 @@ const PublicDrc20Overview = ({
                   .map((drc20) => (
                     <tr className="" key={drc20.name}>
                       <td
-                        className="sticky table-cell-shadow-right z-10 bg-white md:static left-0 md:left-auto whitespace-nowrap md:pr-0 md:pl-0 pt-4 text-xs flex justify-start items-center hover:cursor-pointer"
+                        className="sticky table-cell-shadow-right z-10 bg-black md:static left-0 md:left-auto whitespace-nowrap md:pr-0 md:pl-0 pt-4 text-xs flex justify-start items-center hover:cursor-pointer"
+                        style={{color:'#fff'}}
                         onClick={() => navigator(`/marketplace/drc20/${drc20.name}`)}
                       >
                         <img

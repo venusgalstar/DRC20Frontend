@@ -82,7 +82,7 @@ const RevokeDrc20Overview = ({
         <table className="max-w-7xl table-fixed min-w-full">
           <thead className="w-full border-solid border-b-2 ">
             <tr className="w-full">
-              <th className="font-normal sticky z-10 table-cell-shadow-right bg-white md:static left-0 md:left-auto whitespace-nowrap py-4 pr-8 md:pr-92 text-xs text-start">
+              <th className="font-normal sticky z-10 table-cell-shadow-right bg-white md:static left-0 md:left-auto whitespace-nowrap py-4 pr-8 md:pr-92 text-xs text-start" style={{backgroundColor:'#000', color:'#fff'}}>
                 Item
               </th>
               <th className="font-normal whitespace-nowrap xxs:pl-4 md:pl-0 pr-12 py-4 text-left text-xs">
@@ -95,7 +95,7 @@ const RevokeDrc20Overview = ({
             {currentTransferInscriptionsItems &&
               currentTransferInscriptionsItems.map((transferInscription) => (
                 <tr key={transferInscription.inscriptionNumber}>
-                  <td className="sticky z-10 table-cell-shadow-right md:static left-0 bg-white md:left-auto pt-4 text-xs flex justify-start items-center">
+                  <td className="sticky z-10 table-cell-shadow-right md:static left-0 bg-white md:left-auto pt-4 text-xs flex justify-start items-center" style={{backgroundColor:'#00000000', color:'#fff'}}>
                     <div className="inline-flex items-center">
                       <img
                         className="md:h-7 md:w-7 w-4 h-4 object-cover rounded-full"

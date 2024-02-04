@@ -25,7 +25,7 @@ function Search({ displayedType, searchValue, setSearchValue, handleSearchClick 
   }
 
   return (
-    <div className="bg-account-info-background rounded-lg border-2 border-account-page-default xs:mx-1 relative">
+    <div className="bg-account-info-background border-2 border-account-page-default xs:mx-1 relative">
       <div className="flex flex-row items-center" style={{borderRadius:'0px'}}>
         <input
           className="my-1 mx-2 outline-none border-none text-sm xxs:w-20 xs:w-24 md:w-48"

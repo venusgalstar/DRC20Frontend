@@ -44,7 +44,6 @@ function PublicAccountPage() {
   const fetchDrc20Balance = useCallback(async () => {
     setIsLoading(true)
     const drc20BalanceResponseList = await getDrc20Balance(address)
-
     setTransferInscriptions([])
     setDrc20Array(
       await Promise.all(

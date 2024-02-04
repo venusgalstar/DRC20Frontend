@@ -63,7 +63,7 @@ function AccountPage({ address }: AddressConsumingProps) {
 
   const fetchDrc20Balance = useCallback(async () => {
     const drc20BalanceResponseList = await getDrc20Balance(address)
-
+    console.log("balances",drc20BalanceResponseList);
     setTransferInscriptions([])
     setDrc20Array(
       await Promise.all(
